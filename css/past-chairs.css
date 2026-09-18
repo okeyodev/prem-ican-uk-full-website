@@ -1045,6 +1045,11 @@ body[data-page="past-chairs"] {
 }
 
 @media (max-width: 768px) {
+  .p-era.reveal {
+    opacity: 1;
+    transform: none;
+  }
+
   .p-hero {
     padding: 1.2rem 0 1rem;
   }

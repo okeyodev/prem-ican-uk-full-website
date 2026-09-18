@@ -6002,22 +6002,54 @@ body:has(.mobile-drawer.is-open) {
   .hero-pro-slide-overlay {
     left: 12px;
     right: 12px;
-    bottom: 16px;
-    padding: 1rem 1rem 0.9rem;
+    bottom: 10px;
+    padding: 0.75rem 0.85rem 0.7rem;
     border-radius: 16px;
   }
 
+  .hero-pro-photo-caption,
+  .hero-pro-slide-badge,
+  .hero-pro-slide-link {
+    display: none;
+  }
+
   .hero-pro-slide-title {
-    font-size: 1.15rem;
-    max-width: 18ch;
+    font-size: 1.05rem;
+    max-width: 22ch;
   }
 
   .hero-pro-slide-desc {
     display: none;
   }
 
+  .hero-pro-slide-actions {
+    margin-top: 0.15rem;
+  }
+
+  .hero-pro-slide-btn {
+    padding: 0.55rem 0.85rem;
+    font-size: 0.76rem;
+  }
+
   .hero-pro-dots {
-    bottom: -24px;
+    bottom: -18px;
+    gap: 0.15rem;
+    padding: 3px 6px;
+  }
+
+  .hero-pro-dot-btn {
+    width: 22px;
+    height: 5px;
+    padding: 0;
+  }
+
+  .hero-pro-dot-btn span {
+    width: 16px;
+    height: 4px;
+  }
+
+  .hero-pro-dot-btn.is-active span {
+    width: 22px;
   }
 
   .hero-pro-card {

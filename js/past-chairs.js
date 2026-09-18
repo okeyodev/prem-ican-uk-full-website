@@ -445,7 +445,9 @@ function initReveal() {
         }
       });
     },
-    { threshold: 0.15, rootMargin: "0px 0px -6% 0px" },
+    // Era sections can be taller than the viewport on mobile. A small
+    // threshold ensures those sections reveal as soon as they enter view.
+    { threshold: 0.01, rootMargin: "0px 0px -6% 0px" },
   );
   els.forEach((el) => io.observe(el));
 }
