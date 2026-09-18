@@ -5103,7 +5103,7 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.42s cubic-bezier(.16, 1, .3, 1);
-  z-index: 90;
+  z-index: 100;
   display: block !important;
 }
 
@@ -5123,7 +5123,7 @@ body {
   -webkit-backdrop-filter: blur(24px) saturate(1.3);
   border-left: 1px solid rgba(17, 24, 32, 0.08);
   box-shadow: -12px 0 48px rgba(17, 24, 32, 0.18), -4px 0 16px rgba(17, 24, 32, 0.08);
-  z-index: 91;
+  z-index: 110;
   transform: translateX(100%);
   transition: transform 0.48s cubic-bezier(.16, 1, .3, 1);
   overflow-y: auto;
