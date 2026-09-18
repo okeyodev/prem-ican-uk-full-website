@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17242D">
+  <title>Benevolent Fund | ICAN UK & District Society</title>
+  <meta name="description"
+    content="The ICAN UK Benevolent Fund provides dignified, confidential support for members and their families — professional solidarity when it matters most.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/benevolent.css">
+</head>
+
+<body class="benevolent-page">
+
+  <div id="scroll-progress" class="scroll-progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+  <!-- HEADER  -->
+  <header id="site-header" class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="../images/logo.jpg" alt="ICAN UK & District Society logo">
+      </a>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="nav-item has-mega" data-mega>
+            <button type="button" class="nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="mega-governance" id="trigger-governance">
+              Governance
+            </button>
+            <div id="mega-governance" class="mega-menu">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4>Governance</h4>
+                  <p class="mega-desc">Oversight, standards and continuity.</p>
+                </div>
+                <ul class="mega-links">
+                  <li><a href="committee.html">Our Committee</a></li>
+                  <li><a href="bye-law.html">Bye Laws</a></li>
+                  <li><a href="executive.html">Executive Team</a></li>
+                  <li><a href="past-chairs.html">Past Chair</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-mega" data-mega>
+            <button type="button" class="nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="mega-news" id="trigger-news">
+              News & Events
+            </button>
+            <div id="mega-news" class="mega-menu">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4>Knowledge & Gathering</h4>
+                  <p class="mega-desc">CPD, technical resources and community.</p>
+                </div>
+                <ul class="mega-links">
+                  <li><a href="latest-news.html">News Latest</a></li>
+                  <li><a href="events-calendar.html">Events Calendar</a></li>
+                  <li><a href="events-calendar.html#upcoming-events">Upcoming Events</a></li>
+                  <li><a href="events-calendar.html#monthly-meetings">Monthly Meetings</a></li>
+                  <li><a href="events-calendar.html#resources">Meeting Packs</a></li>
+                  <li><a href="events-calendar.html#past-events">Past Events</a></li>
+                  <li><a href="#">Technical Resources</a></li>
+                  <li><a href="#">Newsletters</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="benevolent.html" class="nav-link is-active" aria-current="page">Benevolent</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Register</a></li>
+          <li class="nav-item"><a href="index.html#about" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="index.html#member-hub" class="btn btn-primary header-join">Member Login</a>
+        <button type="button" id="mobile-toggle" class="mobile-toggle" aria-expanded="false" aria-controls="mobile-drawer"
+          aria-label="Open navigation">
+          <span class="hamburger"><i></i><i></i><i></i></span>
+        </button>
+      </div>
+    </div>
+    <div id="nav-overlay" class="nav-overlay" hidden style="display:none"></div>
+    <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true"
+      aria-label="Mobile navigation">
+      <div class="drawer-header">
+        <a href="../index.html" class="logo"><img src="../images/logo.jpg" alt="ICAN UK logo"></a>
+        <button type="button" id="mobile-close" class="mobile-close" aria-label="Close navigation menu">×</button>
+      </div>
+      <div class="drawer-body">
+        <div class="drawer-group">
+          <button type="button" class="drawer-accordion" aria-expanded="false" aria-controls="drawer-gov">Governance</button>
+          <div id="drawer-gov" class="drawer-panel" hidden>
+            <a href="committee.html">Our Committee</a>
+            <a href="bye-law.html">Bye Laws</a>
+            <a href="executive.html">Executive Team</a>
+            <a href="past-chairs.html">Past Chair</a>
+          </div>
+        </div>
+        <div class="drawer-group">
+          <button type="button" class="drawer-accordion" aria-expanded="false" aria-controls="drawer-news">News & Events</button>
+          <div id="drawer-news" class="drawer-panel" hidden>
+            <a href="latest-news.html">News Latest</a>
+            <a href="events-calendar.html">Events Calendar</a>
+            <a href="events-calendar.html#upcoming-events">Upcoming Events</a>
+            <a href="events-calendar.html#monthly-meetings">Monthly Meetings</a>
+            <a href="events-calendar.html#resources">Meeting Packs</a>
+            <a href="events-calendar.html#past-events">Past Events</a>
+            <a href="#">Technical Resources</a>
+            <a href="#">Newsletters</a>
+          </div>
+        </div>
+        <a href="gallery.html" class="drawer-link">Gallery</a>
+        <a href="benevolent.html" class="drawer-link is-active" aria-current="page">Benevolent</a>
+        <a href="#" class="drawer-link">Register</a>
+        <a href="index.html#about" class="drawer-link">About Us</a>
+        <a href="#contact" class="drawer-link">Contact Us</a>
+        <a href="index.html#member-hub" class="drawer-link drawer-login">Member Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="benevolent-main" tabindex="-1">
+
+    <!-- HERO -->
+    <section class="benevolent-hero" aria-label="Benevolent Fund hero">
+      <div class="benevolent-hero-bg" aria-hidden="true">
+        <div class="benevolent-hero-gridline"></div>
+        <div class="benevolent-hero-orb benevolent-hero-orb--1"></div>
+        <div class="benevolent-hero-orb benevolent-hero-orb--2"></div>
+      </div>
+      <div class="container benevolent-hero-inner">
+        <div class="benevolent-hero-content reveal">
+          <nav class="b-breadcrumb reveal" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a><span class="sep">/</span>
+            <span class="current">Benevolent</span>
+          </nav>
+          <p class="eyebrow benevolent-eyebrow">Benevolent Fund • Community • Support</p>
+          <h1 class="benevolent-hero-title">
+            <span class="hero-line">Supporting Members</span>
+            <span class="hero-line hero-line--accent">When It Matters Most</span>
+          </h1>
+          <p class="benevolent-hero-desc">
+            A professional community should not only celebrate success — it should stand together
+            when members and their families need support. The Benevolent Fund exists to offer
+            dignified, confidential assistance.
+          </p>
+          <div class="benevolent-hero-actions">
+            <a href="#how-it-works" class="btn btn-primary benevolent-btn-primary">Learn How It Works</a>
+            <a href="#application" class="btn btn-secondary benevolent-btn-secondary">Apply / Make an Enquiry</a>
+          </div>
+          <div class="benevolent-hero-meta">
+            <div class="meta-pill">
+              <span class="meta-dot"></span>
+              <span>Member Welfare • Since 1988</span>
+            </div>
+            <div class="meta-links">
+              <a href="#dignity" class="meta-link">Confidential</a>
+              <span class="meta-sep">•</span>
+              <a href="#eligibility" class="meta-link">Discreet</a>
+              <span class="meta-sep">•</span>
+              <span class="meta-link">Professional Solidarity</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="benevolent-hero-visual reveal">
+          <div class="hero-visual-wrap">
+            <div class="hero-brass-frame" aria-hidden="true"></div>
+            <figure class="hero-photo">
+              <img src="../images/ICANUKPICNIC241.jpg"
+                alt="ICAN UK members gathering — community and professional solidarity" loading="eager">
+              <figcaption class="hero-photo-label">
+                <span class="label-kicker">ICAN UK</span>
+                <span class="label-title">Member Welfare</span>
+              </figcaption>
+            </figure>
+            <div class="hero-float-card hero-float-card--top">
+              <span class="float-eyebrow">Community</span>
+              <span class="float-rule"></span>
+              <span class="float-title">Support</span>
+            </div>
+            <div class="hero-float-card hero-float-card--bottom">
+              <strong>Professional Dignity</strong>
+              <span>Handled with discretion and respect</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section id="intro" class="section benevolent-intro">
+      <div class="container">
+        <div class="benevolent-intro-grid reveal">
+          <div class="benevolent-intro-label">
+            <p class="eyebrow">Benevolent Fund</p>
+            <h2 class="display benevolent-intro-heading">A Community That Stands Together</h2>
+          </div>
+          <div class="benevolent-intro-copy">
+            <p class="benevolent-lead">
+              <!-- TODO: Insert approved Benevolent Fund purpose statement -->
+              The Benevolent Fund is the welfare arm of ICAN UK & District Society, established to
+              provide practical support to members and their families during periods of difficulty.
+            </p>
+            <p>
+              It reflects a simple professional principle: belonging to ICAN UK means belonging to a
+              community that looks after its own. The Fund operates with discretion, empathy and
+              institutional responsibility — ensuring that no member has to face hardship alone.
+            </p>
+            <p class="benevolent-note">
+              <em>[Content to be supplied — final approved introduction and purpose wording to replace this placeholder
+                paragraph.]</em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY IT EXISTS -->
+    <section class="section benevolent-why">
+      <div class="container">
+        <div class="benevolent-why-grid reveal">
+          <div class="benevolent-why-index">
+            <span class="benevolent-index-num">01</span>
+            <div class="benevolent-index-meta">
+              <p class="eyebrow">Why the Fund Exists</p>
+              <div class="benevolent-index-rule"></div>
+            </div>
+          </div>
+          <div class="benevolent-why-content">
+            <h2 class="benevolent-why-title">Professional success is rarely linear. The Fund exists for the moments in
+              between.</h2>
+            <div class="benevolent-why-text">
+              <p>
+                <!-- TODO: Insert approved rationale for Benevolent Fund -->
+                Chartered Accountants uphold high standards of professional life, but life itself can
+                present unforeseen challenges — health concerns, family circumstances, or periods of
+                financial strain. The Benevolent Fund was created to ensure practical help is available
+                without compromising professional dignity.
+              </p>
+              <p>
+                It is not a commercial product or public grant scheme. It is a community welfare
+                commitment, funded and governed by the District, and delivered with care.
+              </p>
+              <p class="benevolent-note"><em>[Content to be supplied — approved historical context and governing
+                  principles]</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO WE SUPPORT -->
+    <section class="section benevolent-who">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Who We Support</p>
+          <h2 class="display">Support shaped around people, not categories alone.</h2>
+          <p class="subhead">Eligibility is defined by the approved Benevolent Fund guidelines. The categories below are
+            illustrative placeholders until final content is confirmed.</p>
+        </div>
+        <div class="benevolent-who-grid">
+          <article class="benevolent-who-card reveal">
+            <div class="who-card-head">
+              <span class="who-num">01</span>
+              <h3>Members</h3>
+            </div>
+            <p><!-- TODO: Insert approved description for member eligibility -->Members of ICAN UK & District Society
+              who find themselves in circumstances where support would make a meaningful difference.</p>
+            <span class="who-card-rule"></span>
+            <p class="benevolent-note small"><em>[Content to be supplied]</em></p>
+          </article>
+          <article class="benevolent-who-card reveal">
+            <div class="who-card-head">
+              <span class="who-num">02</span>
+              <h3>Families</h3>
+            </div>
+            <p><!-- TODO: Confirm if family/dependant support is within approved scope -->Where the approved guidelines
+              provide for it, families and dependants connected to a member may be considered.</p>
+            <span class="who-card-rule"></span>
+            <p class="benevolent-note small"><em>[To be confirmed against approved Bye Laws and Benevolent policy]</em>
+            </p>
+          </article>
+          <article class="benevolent-who-card reveal">
+            <div class="who-card-head">
+              <span class="who-num">03</span>
+              <h3>Community</h3>
+            </div>
+            <p>Consideration where community welfare and professional solidarity align with the Fund's charitable
+              purpose and governance.</p>
+            <span class="who-card-rule"></span>
+            <p class="benevolent-note small"><em>[Content to be supplied — do not publish until approved]</em></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUPPORT AVAILABLE -->
+    <section class="section benevolent-support">
+      <div class="container">
+        <div class="benevolent-support-head reveal">
+          <div class="support-head-left">
+            <p class="eyebrow">Support Available</p>
+            <h2 class="display">Practical assistance. Professional dignity.</h2>
+          </div>
+          <div class="support-head-right">
+            <p>The nature of assistance is determined case by case, in line with governance and available resources. No
+              guarantee of support type or value is implied.</p>
+          </div>
+        </div>
+
+        <div class="benevolent-support-list">
+          <!-- TODO: Replace with approved list of support types — use exact wording from source -->
+          <div class="support-item reveal">
+            <div class="support-item-num">01</div>
+            <div class="support-item-body">
+              <h3>[Support Category — to be supplied]</h3>
+              <p>[Description to be supplied — e.g., nature of assistance, how it may be applied, limitations. Do not
+                invent amounts or timelines.]</p>
+            </div>
+          </div>
+          <div class="support-item reveal">
+            <div class="support-item-num">02</div>
+            <div class="support-item-body">
+              <h3>[Support Category — to be supplied]</h3>
+              <p>[Description to be supplied — final approved wording required before publication.]</p>
+            </div>
+          </div>
+          <div class="support-item reveal">
+            <div class="support-item-num">03</div>
+            <div class="support-item-body">
+              <h3>[Support Category — to be supplied]</h3>
+              <p>[Description to be supplied — ensure alignment with Bye Laws and Trustee guidance.]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works" class="section benevolent-process">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">How It Works</p>
+          <h2 class="display">A clear, respectful process — designed to be approached with confidence.</h2>
+        </div>
+
+        <div class="benevolent-timeline" id="benevolent-timeline" role="list"
+          aria-label="Benevolent Fund application process">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <div class="timeline-step reveal" role="listitem">
+            <div class="step-node"><span class="step-num">01</span></div>
+            <div class="step-body">
+              <h3>Enquire</h3>
+              <p>Understand the process and speak to the welfare team confidentially before submitting anything.</p>
+              <span class="step-meta">Confidential initial conversation</span>
+            </div>
+          </div>
+
+          <div class="timeline-step reveal" role="listitem">
+            <div class="step-node"><span class="step-num">02</span></div>
+            <div class="step-body">
+              <h3>Apply</h3>
+              <p>Submit the required information through the designated channel. Guidance is available throughout.</p>
+              <span class="step-meta">Supported application</span>
+            </div>
+          </div>
+
+          <div class="timeline-step reveal" role="listitem">
+            <div class="step-node"><span class="step-num">03</span></div>
+            <div class="step-body">
+              <h3>Review</h3>
+              <p>Your application is considered with discretion by the appointed officers under the Fund's governance.
+              </p>
+              <span class="step-meta">Governance-led review</span>
+            </div>
+          </div>
+
+          <div class="timeline-step reveal" role="listitem">
+            <div class="step-node"><span class="step-num">04</span></div>
+            <div class="step-body">
+              <h3>Outcome</h3>
+              <p>The applicant is informed of the outcome directly, with sensitivity to privacy and dignity.</p>
+              <span class="step-meta">Direct, discreet communication</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="benevolent-note timeline-note"><em>[Process wording to be finalised against approved Benevolent Fund
+            operating procedures. Timings, documentation and decision criteria to be supplied.]</em></p>
+      </div>
+    </section>
+
+    <!-- ELIGIBILITY -->
+    <section id="eligibility" class="section benevolent-eligibility">
+      <div class="container">
+        <div class="benevolent-eligibility-grid">
+          <div class="eligibility-main reveal">
+            <p class="eyebrow">Eligibility</p>
+            <h2 class="display">Who may apply and what may be helpful to prepare.</h2>
+          </div>
+
+          <div class="eligibility-cols">
+            <div class="eligibility-col reveal">
+              <h3>Who may apply?</h3>
+              <div class="eligibility-block">
+                <!-- TODO: Insert approved eligibility content — do not invent -->
+                <ul class="eligibility-list">
+                  <li><span class="eligibility-bullet"></span>[Eligibility criterion — to be supplied]</li>
+                  <li><span class="eligibility-bullet"></span>[Eligibility criterion — to be supplied]</li>
+                  <li><span class="eligibility-bullet"></span>[Eligibility criterion — to be supplied]</li>
+                </ul>
+                <p class="benevolent-note small"><em>Exact eligibility is defined in the approved Benevolent Fund
+                    guidelines and Bye Laws.</em></p>
+              </div>
+            </div>
+
+            <div class="eligibility-col reveal">
+              <h3>What you may need</h3>
+              <div class="eligibility-block">
+                <!-- TODO: Insert approved requirements — do not invent financial evidence or deadlines -->
+                <ul class="eligibility-list">
+                  <li><span class="eligibility-bullet"></span>[Requirement — to be supplied]</li>
+                  <li><span class="eligibility-bullet"></span>[Requirement — to be supplied]</li>
+                  <li><span class="eligibility-bullet"></span>[Requirement — to be supplied]</li>
+                </ul>
+                <p class="benevolent-note small"><em>Only information explicitly required by the approved process should
+                    be listed here.</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIGNITY & CONFIDENTIALITY -->
+    <section id="dignity" class="section benevolent-dignity">
+      <div class="benevolent-dignity-bg" aria-hidden="true">
+        <div class="dignity-glow"></div>
+        <div class="dignity-gridline"></div>
+      </div>
+      <div class="container">
+        <div class="benevolent-dignity-inner reveal">
+          <div class="dignity-label">
+            <p class="eyebrow" style="color:var(--color-brass)">Dignity • Confidentiality</p>
+          </div>
+          <h2 class="display dignity-heading">Support should be approached with discretion and respect.</h2>
+          <div class="dignity-copy">
+            <p>
+              <!-- TODO: Insert approved confidentiality statement -->
+              Applications to the Benevolent Fund are treated with the utmost confidentiality.
+              Information is shared only with those directly involved in considering support, in
+              accordance with data protection and the Fund's governance.
+            </p>
+            <p>
+              The process is designed to protect professional dignity at every stage — from initial
+              enquiry to outcome. You will not be asked to share more than is necessary, and your
+              privacy is central to how the Fund operates.
+            </p>
+            <p class="benevolent-note small" style="color:rgba(242,239,231,0.6)"><em>[Approved data handling, retention
+                and welfare officer contact protocol to be inserted]</em></p>
+          </div>
+          <div class="dignity-meta">
+            <span>Discreet</span><span class="dignity-sep"></span><span>Respectful</span><span
+              class="dignity-sep"></span><span>Private</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLICATION -->
+    <section id="application" class="section benevolent-application">
+      <div class="container">
+        <div class="benevolent-app-card reveal">
+          <div class="app-card-bg" aria-hidden="true">
+            <div class="app-card-orb"></div>
+          </div>
+          <div class="app-card-content">
+            <p class="eyebrow">Need Support?</p>
+            <h2 class="display">If you believe you may be eligible, you can begin the process here.</h2>
+            <p>If you are unsure, you can make a confidential enquiry first. Our team can help you understand the
+              process before you submit an application.</p>
+            <div class="app-actions">
+              <!-- TODO: Replace with actual Benevolent Fund application URL -->
+              <a href="#" class="btn btn-primary benevolent-btn-primary">Apply / Make an Enquiry →</a>
+              <a href="#contact" class="btn btn-secondary benevolent-btn-secondary">Contact the Welfare Team</a>
+            </div>
+            <p class="benevolent-note small app-note"><em>Application link and form destination to be configured. This
+                placeholder prevents invented URLs.</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section benevolent-contact">
+      <div class="container">
+        <div class="benevolent-contact-grid">
+          <div class="contact-intro reveal">
+            <p class="eyebrow">Contact / Assistance</p>
+            <h2 class="display">Questions about the Fund?</h2>
+            <p>Our team can help you understand the process, eligibility and what information is helpful — before you
+              submit an application.</p>
+          </div>
+          <div class="contact-cards">
+            <div class="contact-card reveal">
+              <span class="contact-kicker">Email</span>
+              <span class="contact-value"><!-- TODO: Insert approved Benevolent Fund email -->[benevolent email to be
+                supplied]</span>
+              <span class="contact-hint">Confidential enquiries</span>
+            </div>
+            <div class="contact-card reveal">
+              <span class="contact-kicker">Phone</span>
+              <span class="contact-value"><!-- TODO: Insert approved Benevolent Fund phone -->[phone number to be
+                supplied]</span>
+              <span class="contact-hint">Welfare Officer / Secretary</span>
+            </div>
+            <div class="contact-card contact-card--action reveal">
+              <p>Prefer to speak to someone directly?</p>
+              <!-- TODO: Replace with actual contact URL or mailto -->
+              <a href="#" class="btn btn-primary">Contact the Benevolent Team</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section benevolent-final-cta">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div class="cta-depth" aria-hidden="true">
+            <div class="cta-light"></div>
+            <div class="cta-gridline"></div>
+            <div class="cta-brass-orb"></div>
+          </div>
+          <div class="cta-main benevolent-cta-main">
+            <div class="cta-content">
+              <p class="eyebrow" style="color:var(--color-brass)">Membership • Community • Future</p>
+              <h2 class="display" style="color:var(--color-ivory)">A stronger professional community looks after its
+                own.</h2>
+              <p style="color:rgba(242,239,231,0.72)">Whether you have been a member for years or are newly connected to
+                the District, the Benevolent Fund is part of what makes ICAN UK more than a membership body.</p>
+              <div class="cta-actions">
+                <a href="index.html#membership" class="btn btn-cta-primary">Explore Membership →</a>
+                <a href="index.html#footer" class="btn btn-cta-secondary">Contact Us</a>
+              </div>
+            </div>
+            <div class="cta-visual" aria-hidden="true">
+              <figure class="cta-img cta-img--main"><img src="../images/Gallery1.jpeg" alt="Members celebrating at ICAN UK annual gala dinner" loading="lazy"></figure>
+              <figure class="cta-img cta-img--small"><img src="../images/ICANUKPICNIC241.jpg" alt="Members of ICAN UK community at annual picnic gathering in London" loading="lazy"><span
+                  class="cta-badge">Community • Welfare</span></figure>
+              <div class="cta-float-card"><strong>Est. 1988</strong><span>Professional Solidarity</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER e -->
+  <footer id="footer" class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo footer-logo"><img src="../images/logo-2.png" alt="ICAN UK and District Society logo - Institute of Chartered Accountants of Nigeria"></div>
+        <p class="footer-summary">A distinguished professional community representing, supporting and elevating Nigerian
+          chartered accountants across the UK.</p>
+        <p class="footer-address">Registered office address – Coker Isah & Coker; 74 Church Road, Crystal Palace,
+          London. SE19 2EZ</p>
+      </div>
+      <div class="footer-col">
+        <h4>Governance</h4>
+        <ul>
+          <li><a href="committee.html">Our Committee</a></li>
+          <li><a href="bye-law.html">Bye Laws</a></li>
+          <li><a href="executive.html">Executive Team</a></li>
+          <li><a href="past-chairs.html">Past Chair</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources & Events</h4>
+        <ul>
+          <li><a href="latest-news.html">Latest News</a></li>
+          <li><a href="#">Technical Resources</a></li>
+          <li><a href="#">Newsletters</a></li>
+          <li><a href="#">Monthly Meetings</a></li>
+          <li><a href="index.html#countdown">Upcoming Events</a></li>
+          <li><a href="#">Meeting Packs</a></li>
+          <li><a href="index.html#conference">Past Events</a></li>
+          <li><a href="benevolent.html">Benevolent Fund</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><span>Email: generalsecretary@ican-uk.org</span></li>
+          <li><span>Phone: +44 7535 230 605, +44 7894 069 959</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container bottom-inner">
+        <p>Copyright © ICAN UK & District Society. All Rights Reserved.</p>
+        <p class="compliance">Chartered Accountants Act 1965 compliance notice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top"><span aria-hidden="true">↑</span><span class="visually-hidden">Back to top</span></button>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/benevolent.js"></script>
+</body>
+
+</html>

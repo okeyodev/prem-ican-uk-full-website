@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17242D">
+  <title>Gallery | ICAN UK & District Society | Visual Archive</title>
+  <meta name="description"
+    content="Explore ICAN UK & District Society's visual archive - conferences, meetings, community gatherings and professional moments from 1988 to today.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/gallery.css">
+</head>
+
+<body>
+  <!-- WCAG 2.2: Skip to main content - bypass blocks 2.4.1 -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress" class="scroll-progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+  <!-- HEADER - Reused from homepage, Gallery active -->
+  <header id="site-header" class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo.jpg" alt="ICAN UK and District Society logo - Institute of Chartered Accountants of Nigeria">
+      </a>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="nav-item has-mega" data-mega>
+            <button type="button" class="nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="mega-governance" id="trigger-governance">
+              Governance
+            </button>
+            <div id="mega-governance" class="mega-menu">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4>Governance</h4>
+                  <p class="mega-desc">Oversight, standards and continuity.</p>
+                </div>
+                <ul class="mega-links">
+                  <li><a href="committee.html">Our Committee</a></li>
+                  <li><a href="bye-law.html">Bye Laws</a></li>
+                  <li><a href="executive.html">Executive Team</a></li>
+                  <li><a href="past-chairs.html">Past Chair</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-mega" data-mega>
+            <button type="button" class="nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="mega-news" id="trigger-news">
+              News & Events
+            </button>
+            <div id="mega-news" class="mega-menu">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4>Knowledge & Gathering</h4>
+                  <p class="mega-desc">CPD, technical resources and community.</p>
+                </div>
+                <ul class="mega-links">
+                  <li><a href="latest-news.html">News Latest</a></li>
+                  <li><a href="events-calendar.html">Events Calendar</a></li>
+                  <li><a href="events-calendar.html#upcoming-events">Upcoming Events</a></li>
+                  <li><a href="events-calendar.html#monthly-meetings">Monthly Meetings</a></li>
+                  <li><a href="events-calendar.html#resources">Meeting Packs</a></li>
+                  <li><a href="events-calendar.html#past-events">Past Events</a></li>
+                  <li><a href="#">Technical Resources</a></li>
+                  <li><a href="#">Newsletters</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="benevolent.html" class="nav-link">Benevolent</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Register</a></li>
+          <li class="nav-item"><a href="../index.html#about" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#footer" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="../index.html#member-hub" class="btn btn-primary header-join">Member Login</a>
+        <button type="button" id="mobile-toggle" class="mobile-toggle" aria-expanded="false" aria-controls="mobile-drawer"
+          aria-label="Open navigation">
+          <span class="hamburger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div id="nav-overlay" class="nav-overlay" hidden style="display:none"></div>
+    <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true"
+      aria-label="Mobile navigation">
+      <div class="drawer-header">
+        <a href="../index.html" class="logo">
+          <img src="../images/logo.jpg" alt="ICAN UK and District Society logo - Institute of Chartered Accountants of Nigeria">
+        </a>
+        <button type="button" id="mobile-close" class="mobile-close" aria-label="Close navigation menu">×</button>
+      </div>
+      <div class="drawer-body">
+        <div class="drawer-group">
+          <button type="button" class="drawer-accordion" aria-expanded="false" aria-controls="drawer-gov">
+            Governance
+          </button>
+          <div id="drawer-gov" class="drawer-panel" hidden>
+            <a href="committee.html">Our Committee</a>
+            <a href="bye-law.html">Bye Laws</a>
+            <a href="executive.html">Executive Team</a>
+            <a href="past-chairs.html">Past Chair</a>
+          </div>
+        </div>
+        <div class="drawer-group">
+          <button type="button" class="drawer-accordion" aria-expanded="false" aria-controls="drawer-news">
+            News & Events
+          </button>
+          <div id="drawer-news" class="drawer-panel" hidden>
+            <a href="latest-news.html">News Latest</a>
+            <a href="events-calendar.html">Events Calendar</a>
+            <a href="events-calendar.html#upcoming-events">Upcoming Events</a>
+            <a href="events-calendar.html#monthly-meetings">Monthly Meetings</a>
+            <a href="events-calendar.html#resources">Meeting Packs</a>
+            <a href="events-calendar.html#past-events">Past Events</a>
+            <a href="#">Technical Resources</a>
+            <a href="#">Newsletters</a>
+          </div>
+        </div>
+        <a href="gallery.html" class="drawer-link is-active" aria-current="page">Gallery</a>
+        <a href="benevolent.html" class="drawer-link">Benevolent</a>
+        <a href="#" class="drawer-link">Register</a>
+        <a href="../index.html#about" class="drawer-link">About Us</a>
+        <a href="#footer" class="drawer-link">Contact Us</a>
+        <a href="../index.html#member-hub" class="drawer-link drawer-login">Member Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- GALLERY HERO - Editorial asymmetrical -->
+    <section id="gallery-hero" class="gallery-hero" aria-label="Gallery hero">
+      <div class="container gallery-hero-inner">
+        <div class="gallery-hero-editorial reveal is-visible">
+          <nav class="b-breadcrumb reveal" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a><span class="sep">/</span>
+            <span class="current">Gallery</span>
+          </nav>
+          <div class="gallery-hero-meta">
+            <span class="gallery-hero-eyebrow">Visual Archive</span>
+            <div class="gallery-hero-rule" aria-hidden="true"></div>
+            <span class="gallery-hero-est">ICAN UK — EST. 1988</span>
+          </div>
+          <h1 class="display gallery-hero-title">Explore Our Visual <span>Journey</span></h1>
+          <p class="gallery-hero-desc">Browse through our collection of memorable moments, events, and highlights
+            from our organization's journey.</p>
+          <div class="gallery-hero-actions">
+            <a href="#archive" class="btn btn-primary" data-scroll-to-archive>View Gallery</a>
+            <span class="gallery-hero-count">18 moments • 1988 — 2026</span>
+          </div>
+          <div class="gallery-hero-bottom">
+            <span>Photo Gallery</span>
+            <span>01 / 06</span>
+          </div>
+        </div>
+
+        <div class="gallery-hero-visual reveal is-visible">
+          <figure class="gallery-hero-photo">
+            <img src="../images/ICANUKPICNIC241.jpg" alt="ICAN UK members gathered at community picnic, London 2024"
+              loading="eager" fetchpriority="high" decoding="async">
+            <figcaption>
+              <span>Annual Gathering</span>
+              <span>London • 2024</span>
+            </figcaption>
+          </figure>
+          <div class="gallery-hero-side" aria-hidden="true">
+            <span class="gallery-hero-vertical">VISUAL RECORD • 2026</span>
+            <div class="gallery-hero-brass"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHIVE INTRO - Spacious editorial -->
+    <section id="archive-intro" class="gallery-intro" aria-label="Archive introduction">
+      <div class="container">
+        <div class="gallery-intro-grid">
+          <div class="gallery-intro-label reveal">
+            <span>Archive Statement</span>
+            <h2>Our Story, In Frame</h2>
+          </div>
+          <div class="gallery-intro-content reveal">
+            <p>From professional gatherings and conferences to moments of friendship, celebration and community, our
+              photographs preserve the experiences that continue to shape ICAN UK &amp; District Society.</p>
+            <p>These are not simply photographs. They are records of professional relationships, institutional
+              history, community and shared experiences — a living archive of 550+ chartered accountants across the
+              United Kingdom.</p>
+            <div class="gallery-intro-est">
+              <div class="gallery-intro-est-line" aria-hidden="true"></div>
+              <span class="gallery-intro-est-text">Est. 1988 • London • United Kingdom</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED MOMENTS - Asymmetrical -->
+    <section id="featured" class="gallery-featured" aria-label="Featured moments">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Curated Selection</p>
+          <h2 class="display" style="font-size: clamp(1.7rem, 3vw, 2.4rem);">Featured Moments</h2>
+          <p class="subhead">A focused selection of defining gatherings — conferences, leadership, community and
+            celebration.</p>
+        </div>
+        <div id="featured-grid" class="featured-grid">
+          <!-- Rendered by gallery.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTER BAR - Sticky -->
+    <section id="filter-bar" class="gallery-filter" aria-label="Gallery filter">
+      <div class="container">
+        <div class="filter-inner">
+          <span class="filter-label">Filter by</span>
+          <div id="filter-scroll" class="filter-scroll" role="toolbar" aria-label="Filter gallery by category">
+            <!-- Rendered by gallery.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN ARCHIVE GRID -->
+    <section id="archive" class="gallery-archive" aria-label="Photo archive">
+      <div class="container">
+        <div id="gallery-grid" class="gallery-grid">
+          <!-- Rendered by gallery.js -->
+        </div>
+        <div class="gallery-loadmore">
+          <button id="load-more" class="btn btn-secondary" type="button">Load More Moments</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMORY STRIP - Living Archive -->
+    <section id="memory" class="gallery-memory" aria-label="Living archive">
+      <div class="container">
+        <div class="memory-inner">
+          <div class="memory-content reveal">
+            <p class="memory-label">Historical Record</p>
+            <h2 class="memory-title">A Living Archive</h2>
+            <div class="memory-timeline" aria-hidden="true">
+              <span class="memory-year">1988</span>
+              <span class="memory-line"></span>
+              <span class="memory-year memory-year--muted">2026</span>
+            </div>
+            <p class="memory-desc">Four decades of professional community, captured one moment at a time. From a
+              small London district gathering to the foremost international district — every photograph marks a
+              chapter in our shared institutional history.</p>
+          </div>
+          <div class="memory-visual reveal">
+            <img src="../images/Gallery1.jpeg" alt="ICAN UK historical community moment" loading="lazy" decoding="async">
+            <span class="memory-badge">Archive • 1988 — 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY CTA - Reuse homepage CTA treatment -->
+    <section id="gallery-cta" class="section cta gallery-cta" aria-label="Gallery call to action">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div class="cta-depth" aria-hidden="true">
+            <div class="cta-light"></div>
+            <div class="cta-gridline"></div>
+            <div class="cta-brass-orb"></div>
+          </div>
+          <div class="cta-main">
+            <div class="cta-content">
+              <p class="eyebrow" style="color:var(--color-brass)">Membership • Community • Future</p>
+              <h2 class="display" style="color:var(--color-ivory)">Be part of the next chapter.</h2>
+              <p>The moments ahead are waiting to be made. Whether you are newly qualified in London or a Fellow with
+                decades of impact, your story becomes part of this archive.</p>
+              <div class="cta-bullets"><span>Chartered Act 1965</span><span>London District</span><span>550+
+                  Members</span></div>
+              <div class="cta-actions"><a href="#" class="btn btn-cta-primary">Apply for Membership →</a><a href="../index.html#conference"
+                  class="btn btn-cta-secondary">Explore Events</a></div>
+            </div>
+            <div class="cta-visual" aria-hidden="true">
+              <figure class="cta-img cta-img--main"><img src="../images/ICANUKPICNIC241.jpg" alt="Members of ICAN UK community at annual picnic gathering in London" loading="lazy">
+              </figure>
+              <figure class="cta-img cta-img--small"><img src="../images/Gallery1.jpeg" alt="Members celebrating at ICAN UK annual gala dinner" loading="lazy"><span
+                  class="cta-badge">Visual Archive • London</span></figure>
+              <div class="cta-float-card"><strong>18+</strong><span>Moments Preserved</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER - Reused from homepage -->
+  <footer id="footer" class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo footer-logo">
+          <img src="../images/logo-2.png" alt="ICAN UK and District Society logo - Institute of Chartered Accountants of Nigeria">
+        </div>
+        <p class="footer-summary">A distinguished professional community representing, supporting and elevating Nigerian
+          chartered accountants across the UK.</p>
+        <p class="footer-address">Registered office address – Coker Isah & Coker; 74 Church Road, Crystal Palace,
+          London. SE19 2EZ</p>
+      </div>
+      <div class="footer-col">
+        <h4>Governance</h4>
+        <ul>
+          <li><a href="pages/committee.html">Our Committee</a></li>
+          <li><a href="pages/bye-law.html">Bye Laws</a></li>
+          <li><a href="pages/executive.html">Executive Team</a></li>
+          <li><a href="pages/past-chairs.html">Past Chair</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources & Events</h4>
+        <ul>
+          <li><a href="./pages/latest-news.html">Latest News</a></li>
+          <li><a href="#">Technical Resources</a></li>
+          <li><a href="#">Newsletters</a></li>
+          <li><a href="#">Monthly Meetings</a></li>
+          <li><a href="../index.html#countdown">Upcoming Events</a></li>
+          <li><a href="#">Meeting Packs</a></li>
+          <li><a href="../index.html#conference">Past Events</a></li>
+          <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><span>Email: generalsecretary@ican-uk.org</span></li>
+          <li><span>Phone: +44 7535 230 605, +44 7894 069 959</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container bottom-inner">
+        <p>Copyright © ICAN UK & District Society. All Rights Reserved.</p>
+        <p class="compliance">Chartered Accountants Act 1965 compliance notice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top"><span aria-hidden="true">↑</span><span class="visually-hidden">Back to top</span></button>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true"
+    aria-label="Image viewer">
+    <div class="lightbox-top">
+      <span class="lightbox-brand">ICAN UK Visual Archive</span>
+      <button class="lightbox-close" type="button" aria-label="Close viewer">×</button>
+    </div>
+    <div class="lightbox-main">
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">‹</button>
+      <figure class="lightbox-figure">
+        <img id="lightbox-img" src="" alt="Enlarged gallery image">
+      </figure>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">›</button>
+    </div>
+    <div class="lightbox-bottom">
+      <div class="lightbox-caption">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-meta"></p>
+      </div>
+      <div id="lightbox-count" class="lightbox-count"></div>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/gallery.js"></script>
+</body>
+
+</html>

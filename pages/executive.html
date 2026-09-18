@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17242D">
+  <title>Executive Team | ICAN UK & District Society</title>
+  <meta name="description"
+    content="Executive leadership of ICAN UK & District Society — Chairman, Executive Officers, Ex-Officio and Immediate Past Chair. Est. 1988.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet"href="../css/executive.css">
+</head>
+
+<body data-page="executive">
+
+  <div id="scroll-progress" class="scroll-progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+  <!-- HEADER - Reused from homepage with Executive Team active -->
+  <header id="site-header" class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo.jpg" alt="ICAN UK and District Society logo - Institute of Chartered Accountants of Nigeria">
+      </a>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="nav-item has-mega is-active" data-mega>
+            <button type="button" class="nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="mega-governance"
+              id="trigger-governance">Governance</button>
+            <div id="mega-governance" class="mega-menu">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4>Governance</h4>
+                  <p class="mega-desc">Oversight, standards and continuity.</p>
+                </div>
+                <ul class="mega-links">
+                 <li><a href="committee.html" >Our Committee</a></li>
+                  <li><a href="bye-law.html">Bye Laws</a></li>
+                  <li><a href="executive.html" class="is-active-link" aria-current="page">Executive Team</a></li>
+                  <!-- <li><a href="#">Committee Lead</a></li> -->
+                  <li><a href="past-chairs.html">Past Chair</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-mega" data-mega>
+            <button type="button" class="nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="mega-news" id="trigger-news">News &
+              Events</button>
+            <div id="mega-news" class="mega-menu">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4>Knowledge & Gathering</h4>
+                  <p class="mega-desc">CPD, technical resources and community.</p>
+                </div>
+                <ul class="mega-links">
+                  <li><a href="latest-news.html">News Latest</a></li>
+                  <li><a href="events-calendar.html">Events Calendar</a></li>
+                  <li><a href="events-calendar.html#upcoming-events">Upcoming Events</a></li>
+                  <li><a href="events-calendar.html#monthly-meetings">Monthly Meetings</a></li>
+                  <li><a href="events-calendar.html#resources">Meeting Packs</a></li>
+                  <li><a href="events-calendar.html#past-events">Past Events</a></li>
+                  <li><a href="#">Technical Resources</a></li>
+                  <li><a href="#">Newsletters</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="benevolent.html" class="nav-link">Benevolent</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Register</a></li>
+          <li class="nav-item"><a href="index.html#about" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#footer" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#member-hub" class="btn btn-primary header-join">Member Login</a>
+        <button type="button" id="mobile-toggle" class="mobile-toggle" aria-expanded="false" aria-controls="mobile-drawer"
+          aria-label="Open navigation"><span class="hamburger"><i></i><i></i><i></i></span></button>
+      </div>
+    </div>
+
+    <div id="nav-overlay" class="nav-overlay" hidden style="display:none"></div>
+    <!-- MOBILE DRAWER  -->
+    <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true"  aria-label="Mobile navigation">
+      <div class="drawer-header">
+        <a href="../index.html" class="logo">
+          <img src="../images/logo.jpg" alt="ICAN UK and District Society logo - Institute of Chartered Accountants of Nigeria">
+        </a>
+        <button type="button" id="mobile-close" class="mobile-close" aria-label="Close navigation menu">×</button></div>
+      <div class="drawer-body">
+        <div class="drawer-group">
+          <button type="button" class="drawer-accordion" aria-expanded="false" aria-controls="drawer-gov">
+            Governance
+          </button>
+          <div id="drawer-gov" class="drawer-panel" hidden>
+            <a href="committee.html">Our Committee</a>
+            <a href="bye-law.html">Bye Laws</a>
+            <a href="executive.html" class="is-active-link" aria-current="page">Executive Team</a>
+            <!-- <a href="#">Committee Lead</a> -->
+            <a href="past-chairs.html">Past Chair</a>
+          </div>
+        </div>
+        <div class="drawer-group">
+          <button type="button" class="drawer-accordion" aria-expanded="false" aria-controls="drawer-news">
+            News & Events
+          </button>
+          <div id="drawer-news" class="drawer-panel" hidden>
+            <a href="latest-news.html">News Latest</a>
+            <a href="events-calendar.html">Events Calendar</a>
+            <a href="events-calendar.html#upcoming-events">Upcoming Events</a>
+            <a href="events-calendar.html#monthly-meetings">Monthly Meetings</a>
+            <a href="events-calendar.html#resources">Meeting Packs</a>
+            <a href="events-calendar.html#past-events">Past Events</a>
+            <a href="#">Technical Resources</a>
+            <a href="#">Newsletters</a>
+          </div>
+        </div>
+        <a href="gallery.html" class="drawer-link">Gallery</a>
+        <a href="benevolent.html" class="drawer-link">Benevolent</a>
+        <a href="#" class="drawer-link">Register</a>
+        <a href="index.html#about" class="drawer-link">About Us</a>
+        <a href="#footer" class="drawer-link">Contact Us</a>
+        <a href="#member-hub" class="drawer-link drawer-login">Member Login</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION INDEX - Desktop floating -->
+  <nav class="section-index" aria-label="Page sections">
+    <span class="section-index-label">Leadership</span>
+    <div class="section-index-links">
+      <a href="#intro" class="si-link" data-section="intro"><span>01</span> Intro</a>
+      <a href="#chairman" class="si-link" data-section="chairman"><span>02</span> Chairman</a>
+      <a href="#executive" class="si-link" data-section="executive"><span>03</span> Executive</a>
+      <a href="#exofficio" class="si-link" data-section="exofficio"><span>04</span> Ex-Officio</a>
+      <a href="#commitment" class="si-link" data-section="commitment"><span>05</span> Commitment</a>
+    </div>
+    <div class="section-index-progress">
+      <div class="si-progress-bar" id="si-progress"></div>
+    </div>
+  </nav>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- 01 HERO -->
+    <section class="e-hero">
+      <div class="e-hero-container">
+        <div class="e-hero-inner">
+          <div class="e-hero-left">
+            <nav class="b-breadcrumb reveal" aria-label="Breadcrumb">
+              <a href="../index.html">Home</a><span class="sep">/</span>
+              <a href="../pages/our-committee.html">Governance</a><span class="sep">/</span><span class="current">Executive</span>
+            </nav>
+            <p class="eyebrow reveal">Leadership • Governance • Service</p>
+            <h1 class="display e-hero-title reveal">
+              <span class="e-hero-title-line">The People</span>
+              <span class="e-hero-title-line">Behind the</span>
+              <span class="e-hero-title-line e-hero-title-line--accent">District</span>
+            </h1>
+            <p class="e-hero-desc reveal">The Executive Team provides leadership, coordinates the affairs of the
+              Society, regulates membership and safeguards the interests of over 550 Chartered Accountants across the
+              United Kingdom.</p>
+            <div class="e-hero-actions reveal">
+              <a href="#chairman" class="btn btn-primary">Meet the Chairman</a>
+              <a href="#executive" class="btn btn-secondary">View Executive Team</a>
+            </div>
+            <div class="e-hero-meta reveal">
+              <span>Executive Leadership</span><i></i><span>ICAN UK & District Society</span><i></i><span>Est.
+                1988</span>
+            </div>
+          </div>
+
+          <div class="e-hero-visual-wrap reveal">
+            <div class="e-hero-collage" aria-hidden="false">
+              <div class="e-hero-rule e-hero-rule--v1"></div>
+              <div class="e-hero-rule e-hero-rule--v2"></div>
+              <div class="e-hero-depth"></div>
+
+              <div class="e-hero-chairman">
+                <figure class="e-hero-chairman-img">
+                  <img src="../images/executive/chairman.jpeg"
+                    alt="Akintayo Ojo FCA, Chairman of ICAN UK & District Society" width="520" height="650"
+                    loading="eager" decoding="async" fetchpriority="high">
+                  <span class="e-hero-badge">Chairman • Est. 1988</span>
+                </figure>
+                <div class="e-hero-chairman-meta">
+                  <strong>Akintayo Ojo FCA</strong><span>Chairman</span>
+                </div>
+              </div>
+
+              <div class="e-hero-mini e-hero-mini--left">
+                <img src="../images/executive/vice-chairman.jpeg"
+                  alt="Tayo Animashaun, FCA — Vice Chairman" width="180" height="210" loading="eager" decoding="async">
+                <div class="e-hero-mini-meta"><strong>Tayo Animashaun</strong><span>Vice Chairman</span></div>
+              </div>
+
+              <div class="e-hero-mini e-hero-mini--right">
+                <img src="https://dashboard.ican-uk.org/app/webroot/excos/general-secretary.jpeg"
+                  alt="Olajumoke Sangojinmi, FCA — General Secretary" width="180" height="210" loading="eager"
+                  decoding="async">
+                <div class="e-hero-mini-meta"><strong>Olajumoke Sangojinmi</strong><span>General Secretary</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 LEADERSHIP INTRODUCTION -->
+    <section id="intro" class="section e-intro">
+      <div class="container">
+        <div class="e-intro-grid reveal">
+          <div class="e-intro-side">
+            <div class="e-intro-number">01</div>
+            <p class="eyebrow">Our Leadership Philosophy</p>
+            <div class="e-intro-rule"></div>
+          </div>
+          <div class="e-intro-main">
+            <h2 class="display e-intro-heading">Leadership grounded in service, professionalism and responsibility.</h2>
+            <div class="e-intro-copy">
+              <p>Our Executive Team brings together <strong>decades of professional experience</strong> across practice,
+                industry and public service, with a shared commitment to advancing the interests of members. Leadership
+                here is understood as <strong>service</strong> — transparent, ethical and collaborative — not hierarchy
+                for its own sake.</p>
+              <p>We coordinate the affairs of the Society, safeguard membership, foster professional development and
+                community wellbeing, and ensure continuity from 1988 to today. Decisions are guided by the Chartered
+                Accountants Act 1965, the Society's Bye Laws, and a duty to members.</p>
+            </div>
+
+            <div class="e-principles reveal">
+              <div class="e-principle">
+                <span class="e-principle-num">01</span>
+                <div class="e-principle-line"></div>
+                <h3>Strategic Vision</h3>
+              </div>
+              <div class="e-principle">
+                <span class="e-principle-num">02</span>
+                <div class="e-principle-line"></div>
+                <h3>Collaborative Culture</h3>
+              </div>
+              <div class="e-principle">
+                <span class="e-principle-num">03</span>
+                <div class="e-principle-line"></div>
+                <h3>Growth Focus</h3>
+              </div>
+              <div class="e-principle">
+                <span class="e-principle-num">04</span>
+                <div class="e-principle-line"></div>
+                <h3>Stakeholder Value</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 CHAIRMAN FEATURE -->
+    <section id="chairman" class="section e-chairman">
+      <div class="container">
+        <div class="e-chairman-inner reveal">
+          <div class="e-chairman-media">
+            <div class="e-chairman-frame">
+              <img src="../images/executive/chairman.jpeg"
+                alt="Akintayo Ojo FCA, Chairman of ICAN UK & District Society" width="560" height="700" loading="eager"
+                decoding="async">
+            </div>
+            <div class="e-chairman-accent" aria-hidden="true"></div>
+            <div class="e-chairman-shadow" aria-hidden="true"></div>
+          </div>
+          <div class="e-chairman-content">
+            <p class="eyebrow">Chairman</p>
+            <h2 class="display">Akintayo Ojo FCA</h2>
+            <p class="e-chairman-role">Chairman • ICAN UK & District Society</p>
+            <div class="e-chairman-rule"></div>
+            <div class="e-chairman-meta"><span>Leadership • Service</span><i></i><span>Governance • Community</span>
+            </div>
+            <div class="e-chairman-note">
+              <p>Providing leadership for the Society, chairing Executive Committee deliberations, and representing the
+                District across the United Kingdom. The Chairman coordinates the affairs of the Society and upholds its
+                mission to support members in achieving professional excellence and social wellbeing.</p>
+            </div>
+            <div class="e-chairman-foot">
+              <span class="e-chairman-badge">Est. 1988 • Chartered Act 1965 • 550+ Members</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 EXECUTIVE LEADERSHIP -->
+    <section id="executive" class="section e-lead">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Executive Leadership</p>
+          <h2 class="display">Meet the Executive Team</h2>
+          <p class="subhead">The Executive Team brings together elected officers and ex-officio leadership serving the
+            ICAN UK & District Society.</p>
+        </div>
+
+        <!-- CORE EXECUTIVE -->
+        <div class="e-group reveal">
+          <div class="e-group-head">
+            <span class="e-group-label">Core Executive</span>
+            <div class="e-group-line"></div>
+            <span class="e-group-count">04 Officers</span>
+          </div>
+          <div class="e-exec-grid e-exec-grid--core">
+            <article class="e-card" tabindex="0">
+              <div class="e-card-accent"></div>
+              <div class="e-card-media"><img src="../images/executive/vice-chairman.jpeg"
+                  alt="Tayo Animashaun, FCA — Vice Chairman" loading="lazy" decoding="async"
+                  style="object-position:center top"></div>
+              <div class="e-card-body">
+                <span class="e-card-role">Vice Chairman</span>
+                <h3 class="e-card-name">Tayo Animashaun, FCA</h3>
+                <span class="e-card-designation">FCA • Leadership & Support</span>
+                <div class="e-card-foot"><span class="e-card-index">02</span><span class="e-card-arrow">→</span></div>
+              </div>
+            </article>
+
+            <article class="e-card" tabindex="0">
+              <div class="e-card-accent"></div>
+              <div class="e-card-media"><img
+                  src="../images/executive/deputy-vice-chairman.jpeg"
+                  alt="Moses Peters, FCA — Deputy Vice Chairman" loading="lazy" decoding="async"
+                  style="object-position:center top"></div>
+              <div class="e-card-body">
+                <span class="e-card-role">Deputy Vice Chairman</span>
+                <h3 class="e-card-name">Moses Peters, FCA</h3>
+                <span class="e-card-designation">FCA • Governance</span>
+                <div class="e-card-foot"><span class="e-card-index">03</span><span class="e-card-arrow">→</span></div>
+              </div>
+            </article>
+
+            <article class="e-card" tabindex="0">
+              <div class="e-card-accent"></div>
+              <div class="e-card-media"><img
+                  src="../images/executive/general-secretary.jpeg"
+                  alt="Olajumoke Sangojinmi, FCA — General Secretary" loading="lazy" decoding="async"
+                  style="object-position:center top"></div>
+              <div class="e-card-body">
+                <span class="e-card-role">General Secretary</span>
+                <h3 class="e-card-name">Olajumoke Sangojinmi, FCA</h3>
+                <span class="e-card-designation">FCA • Administration</span>
+                <div class="e-card-foot"><span class="e-card-index">04</span><span class="e-card-arrow">→</span></div>
+              </div>
+            </article>
+
+            <article class="e-card" tabindex="0">
+              <div class="e-card-accent"></div>
+              <div class="e-card-media"><img
+                  src="../images/executive/assistant-general-secretary.jpeg"
+                  alt="Obi Ifezue, ACA — Asst. General Secretary" loading="lazy" decoding="async"
+                  style="object-position:center top"></div>
+              <div class="e-card-body">
+                <span class="e-card-role">Asst. General Secretary</span>
+                <h3 class="e-card-name">Obi Ifezue, ACA</h3>
+                <span class="e-card-designation">ACA • Coordination</span>
+                <div class="e-card-foot"><span class="e-card-index">05</span><span class="e-card-arrow">→</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- EXECUTIVE OFFICERS -->
+        <div class="e-group reveal">
+          <div class="e-group-head">
+            <span class="e-group-label">Executive Officers</span>
+            <div class="e-group-line"></div>
+            <span class="e-group-count">05 Officers</span>
+          </div>
+          <div class="e-exec-grid e-exec-grid--officers">
+            <article class="e-card" tabindex="0">
+              <div class="e-card-accent"></div>
+              <div class="e-card-media"><img src="../images/executive/treasurer.jpeg"
+                  alt="Iredele Oyedele, FCA — Treasurer" loading="lazy" decoding="async"
+                  style="object-position:center top"></div>
+              <div class="e-card-body">
+                <span class="e-card-role">Treasurer</span>
+                <h3 class="e-card-name">Iredele Oyedele, FCA</h3>
+                <span class="e-card-designation">FCA • Financial Stewardship</span>
+                <div class="e-card-foot"><span class="e-card-index">06</span><span class="e-card-arrow">→</span></div>
+              </div>
+            </article>
+
+            <article class="e-card" tabindex="0">
+              <div class="e-card-accent"></div>
+              <div class="e-card-media"><img
+                  src="../images/executive/financial-secretary.jpeg"
+                  alt="Vivian Okolie, FCA — Financial Secretary" loading="lazy" decoding="async"
+                  style="object-position:center top"></div>
+              <div class="e-card-body">
+                <span class="e-card-role">Financial Secretary</span>
+                <h3 class="e-card-name">Vivian Okolie, FCA</h3>
+                <span class="e-card-designation">FCA • Financial Records</span>
+                <div class="e-card-foot"><span class="e-card-index">07</span><span class="e-card-arrow">→</span></div>
+              </div>
+            </article>
+
+            <article class="e-card" tabindex="0">
+              <div class="e-card-accent"></div>
+              <div class="e-card-media"><img
+                  src="../images/executive/technical-secretary.jpeg"
+                  alt="Samuel Olayioye, FCA — Technical Secretary" loading="lazy" decoding="async"
+                  style="object-position:center top"></div>
+              <div class="e-card-body">
+                <span class="e-card-role">Technical Secretary</span>
+                <h3 class="e-card-name">Samuel Olayioye, FCA</h3>
+                <span class="e-card-designation">FCA • Professional Standards</span>
+                <div class="e-card-foot"><span class="e-card-index">08</span><span class="e-card-arrow">→</span></div>
+              </div>
+            </article>
+
+            <article class="e-card" tabindex="0">
+              <div class="e-card-accent"></div>
+              <div class="e-card-media"><img
+                  src="../images/executive/membership-secretary.jpeg"
+                  alt="Ifeoma Okafor, FCA — Membership Secretary" loading="lazy" decoding="async"
+                  style="object-position:center top"></div>
+              <div class="e-card-body">
+                <span class="e-card-role">Membership Secretary</span>
+                <h3 class="e-card-name">Ifeoma Okafor, FCA</h3>
+                <span class="e-card-designation">FCA • Membership & Regions</span>
+                <div class="e-card-foot"><span class="e-card-index">09</span><span class="e-card-arrow">→</span></div>
+              </div>
+            </article>
+
+            <article class="e-card" tabindex="0">
+              <div class="e-card-accent"></div>
+              <div class="e-card-media"><img src="../images/executive/social-secretary.jpeg"
+                  alt="Deborah O. Suleiman, ACA — Social Secretary" loading="lazy" decoding="async"
+                  style="object-position:center top"></div>
+              <div class="e-card-body">
+                <span class="e-card-role">Social Secretary</span>
+                <h3 class="e-card-name">Deborah O. Suleiman, ACA</h3>
+                <span class="e-card-designation">ACA • Social & Wellbeing</span>
+                <div class="e-card-foot"><span class="e-card-index">10</span><span class="e-card-arrow">→</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 EX-OFFICIO -->
+    <section id="exofficio" class="section e-exofficio">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Ex-Officio Leadership</p>
+          <h2 class="display">Experience & Continuity</h2>
+          <p class="subhead">Guidance, institutional memory and continuity — including the Immediate Past Chair.</p>
+        </div>
+
+        <div class="e-exec-grid e-exec-grid--exofficio reveal">
+          <article class="e-card e-card--exofficio" tabindex="0">
+            <div class="e-card-accent"></div>
+            <div class="e-card-media"><img src="../images/executive/ex-officio-1.jpeg"
+                alt="Seyi Bamisaye, FCA — Ex-Officio 1" loading="lazy" decoding="async"
+                style="object-position:center top"></div>
+            <div class="e-card-body">
+              <span class="e-card-role">Ex-Officio 1</span>
+              <h3 class="e-card-name">Seyi Bamisaye, FCA</h3>
+              <span class="e-card-designation">FCA • Ex-Officio</span>
+              <div class="e-card-foot"><span class="e-card-index">11</span><span class="e-card-arrow">→</span></div>
+            </div>
+          </article>
+
+          <article class="e-card e-card--exofficio" tabindex="0">
+            <div class="e-card-accent"></div>
+            <div class="e-card-media"><img src="../images/executive/ex-officio-2.jpeg"
+                alt="Olawunmi Hassan, FCA — Ex-Officio 2" loading="lazy" decoding="async"
+                style="object-position:center top"></div>
+            <div class="e-card-body">
+              <span class="e-card-role">Ex-Officio 2</span>
+              <h3 class="e-card-name">Olawunmi Hassan, FCA</h3>
+              <span class="e-card-designation">FCA • Ex-Officio</span>
+              <div class="e-card-foot"><span class="e-card-index">12</span><span class="e-card-arrow">→</span></div>
+            </div>
+          </article>
+
+          <article class="e-card e-card--ipc" tabindex="0">
+            <div class="e-card-accent"></div>
+            <div class="e-card-media"><img src="../images/executive/ex-officio-3.jpeg"
+                alt="Marian Adekoya, FCA — Ex-Officio 3 / IPC, Immediate Past Chair" loading="lazy" decoding="async"
+                style="object-position:center top"></div>
+            <div class="e-card-body">
+              <span class="e-card-role">Ex-Officio 3 / IPC • Immediate Past Chair</span>
+              <h3 class="e-card-name">Marian Adekoya, FCA</h3>
+              <span class="e-card-designation">FCA • Continuity & Guidance</span>
+              <div class="e-card-foot"><span class="e-card-index">13 • IPC</span><span class="e-card-arrow">→</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 LEADERSHIP AS SERVICE / COMMITMENT -->
+    <section id="commitment" class="section e-commit">
+      <div class="container">
+        <div class="e-commit-grid">
+          <div class="e-commit-main reveal">
+            <p class="eyebrow">Our Commitment</p>
+            <h2 class="display">Leadership Excellence</h2>
+            <p class="e-commit-copy">Our Executive Team is committed to upholding the highest standards of professional
+              governance, ethical leadership and member service — preserving the Society's reputation while developing
+              its future.</p>
+
+            <div class="e-commit-diagram" aria-hidden="true">
+              <div class="e-diagram-center">Leadership</div>
+              <div class="e-diagram-lines"></div>
+              <div class="e-diagram-nodes">
+                <span>Ethics</span>
+                <span>Service</span>
+                <span>Development</span>
+              </div>
+              <div class="e-diagram-lines" style="transform:rotate(180deg)"></div>
+              <div class="e-diagram-bottom">Members</div>
+            </div>
+            <div class="e-commit-depth"></div>
+          </div>
+
+          <div class="e-commit-panels reveal">
+            <div class="e-commit-panel">
+              <span class="e-commit-num">01</span>
+              <h4>Professional Standards</h4>
+              <p>We uphold transparent governance aligned with the Society's objectives, Bye Laws and the Chartered
+                Accountants Act 1965 — ensuring decisions serve members first.</p>
+            </div>
+            <div class="e-commit-panel">
+              <span class="e-commit-num">02</span>
+              <h4>Continuous Development</h4>
+              <p>Our leaders participate in ongoing professional development, technical sessions and industry thought
+                leadership to deliver relevant CPD and skills programmes.</p>
+            </div>
+            <div class="e-commit-panel">
+              <span class="e-commit-num">03</span>
+              <h4>Open Communication</h4>
+              <p>We maintain open channels for feedback and dialogue across all levels of the Society — fostering a
+                culture where every member is heard and supported.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 GOVERNANCE NAVIGATION -->
+    <section class="section e-gov-nav">
+      <div class="container">
+        <div class="e-gov-card reveal">
+          <div class="e-gov-card-left">
+            <p class="eyebrow">Governance</p>
+            <h3>Explore how the Executive Committee and Standing Committees work together.</h3>
+            <p>Executive Team provides leadership and coordinates the affairs of the Society. Standing Committees
+              deliver specialist programmes across finance, membership, technical standards, social wellbeing and member
+              welfare.</p>
+            <a href="committee.html" class="btn btn-primary">Explore Committee Structure →</a>
+          </div>
+          <div class="e-gov-card-right" aria-hidden="true">
+            <div class="e-gov-visual">
+              <div class="e-gov-node e-gov-node--exec">Executive Team</div>
+              <div class="e-gov-arrow">↕</div>
+              <div class="e-gov-node e-gov-node--standing">Standing Committees</div>
+              <div class="e-gov-arrow" style="opacity:.5">↓</div>
+              <div class="e-gov-node e-gov-node--standing" style="font-size:.72rem">Members • CPD • Community</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section e-cta">
+      <div class="container">
+        <div class="e-cta-panel reveal">
+          <div class="e-cta-depth" aria-hidden="true">
+            <div class="e-cta-light"></div>
+            <div class="e-cta-gridline"></div>
+            <div class="e-cta-brass-orb"></div>
+          </div>
+          <div class="e-cta-main">
+            <div class="e-cta-content">
+              <p class="eyebrow">Get Involved</p>
+              <h2 class="display">Be Part of the ICAN UK Community</h2>
+              <p>Whether you are newly qualified in London or a Fellow with decades of impact, there is a home for you
+                here. Explore membership, CPD and community programmes.</p>
+              <div class="e-cta-bullets"><span>Chartered Act 1965</span><span>London District</span><span>550+
+                  Members</span></div>
+              <div class="e-cta-actions">
+                <a href="#" class="btn btn-cta-primary">Explore Membership →</a>
+                <a href="#" class="btn btn-cta-secondary">Explore Events</a>
+              </div>
+            </div>
+            <div class="cta-visual" aria-hidden="true" style="position:relative; display:grid; gap:.8rem;">
+              <figure class="cta-img cta-img--main" style="aspect-ratio:4/3; border-radius:18px; overflow:hidden;"><img
+                  src="../images/ICANUKPICNIC241.jpg" alt="Members of ICAN UK community at annual picnic gathering in London" loading="lazy"
+                  style="width:100%;height:100%;object-fit:cover"></figure>
+              <div class="cta-float-card"
+                style="position:absolute; left:-12px; bottom:12px; background:var(--color-white); border:1px solid var(--color-line); border-radius:14px; padding:.65rem .8rem; box-shadow:var(--shadow-sm); display:flex; flex-direction:column">
+                <strong
+                  style="font-family:var(--font-display); font-size:1.2rem; color:var(--color-navy)">13</strong><span
+                  style="font-size:.68rem; color:rgba(17,24,32,.56)">Executive Leadership Team</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo footer-logo">
+          <img src="../images/logo-2.png" alt="ICAN UK and District Society logo - Institute of Chartered Accountants of Nigeria">
+        </div>
+        <p class="footer-summary">A distinguished professional community representing, supporting and elevating Nigerian
+          chartered accountants across the UK.</p>
+        <p class="footer-address">>Registered office address – Coker Isah & Coker; 74 Church Road, Crystal Palace,
+        London. SE19 2EZ</p>
+      </div>
+      <div class="footer-col">
+        <h4>Governance</h4>
+        <ul>
+          <li><a href="committee.html">Our Committee</a></li>
+          <li><a href="bye-law.html">Bye Laws</a></li>
+          <li><a href="executive.html" class="is-active-link" aria-current="page">Executive Team</a></li>
+          <!-- <li><a href="#">Committee Lead</a></li> -->
+          <li><a href="past-chairs.html">Past Chair</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources & Events</h4>
+        <ul>
+          <li><a href="latest-news.html">Latest News</a></li>
+          <li><a href="#">Technical Resources</a></li>
+          <li><a href="#">Newsletters</a></li>
+          <li><a href="#">Monthly Meetings</a></li>
+          <li><a href="#">Upcoming Events</a></li>
+          <li><a href="#">Meeting Packs</a></li>
+          <li><a href="#">Past Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><span>Email: generalsecretary@ican-uk.org</span></li>
+          <li><span>Phone: +44 7535 230 605, +44 7894 069 959</span></li>
+          <!-- <li><span>Social: [configurable]</span></li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container bottom-inner">
+        <p>Copyright © ICAN UK & District Society. All Rights Reserved.</p>
+        <p class="compliance">Chartered Accountants Act 1965 compliance notice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top"><span aria-hidden="true">↑</span><span class="visually-hidden">Back to top</span></button>
+  <script src="../js/script.js"></script>
+  <script src="../js/executive.js"></script>
+</body>
+
+</html>

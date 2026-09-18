@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17242D">
+  <title>Committee & Governance | ICAN UK & District Society</title>
+  <meta name="description"
+    content="Governance structure of ICAN UK & District Society  Executive Committee, Standing Committees, Past Chairs & Patrons. Est. 1988.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/committee.css">
+</head>
+
+<body data-page="committee">
+
+  <div id="scroll-progress" class="scroll-progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+  <!-- HEADER - Reused exactly from homepage -->
+  <header id="site-header" class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo.jpg" alt="ICAN UK and District Society logo - Institute of Chartered Accountants of Nigeria">
+      </a>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="nav-item has-mega is-active" data-mega>
+            <button type="button" class="nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="mega-governance"
+              id="trigger-governance">Governance</button>
+            <div id="mega-governance" class="mega-menu">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4>Governance</h4>
+                  <p class="mega-desc">Oversight, standards and continuity.</p>
+                </div>
+                <ul class="mega-links">
+                  <li><a href="committee.html" class="is-active-link" aria-current="page">Our Committee</a></li>
+                  <li><a href="bye-law.html">Bye Laws</a></li>
+                  <li><a href="executive.html">Executive Team</a></li>
+                  <!-- <li><a href="#">Committee Lead</a></li> -->
+                  <li><a href="past-chairs.html">Past Chair</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-mega" data-mega>
+            <button type="button" class="nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="mega-news" id="trigger-news">
+              News & Events
+            </button>
+            <div id="mega-news" class="mega-menu">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4>Knowledge & Gathering</h4>
+                  <p class="mega-desc">CPD, technical resources and community.</p>
+                </div>
+                <ul class="mega-links">
+                  <li><a href="latest-news.html">News Latest</a></li>
+                  <li><a href="events-calendar.html">Events Calendar</a></li>
+                  <li><a href="events-calendar.html#upcoming-events">Upcoming Events</a></li>
+                  <li><a href="events-calendar.html#monthly-meetings">Monthly Meetings</a></li>
+                  <li><a href="events-calendar.html#resources">Meeting Packs</a></li>
+                  <li><a href="events-calendar.html#past-events">Past Events</a></li>
+                  <li><a href="#">Technical Resources</a></li>
+                  <li><a href="#">Newsletters</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="benevolent.html" class="nav-link">Benevolent</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Register</a></li>
+          <li class="nav-item"><a href="index.html#about" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#footer" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="index.html#member-hub" class="btn btn-primary header-join">Member Login</a>
+        <button type="button" id="mobile-toggle" class="mobile-toggle" aria-expanded="false" aria-controls="mobile-drawer"
+          aria-label="Open navigation">
+          <span class="hamburger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div id="nav-overlay" class="nav-overlay" hidden style="display:none"></div>
+    <!-- MOBILE DRAWER  -->
+    <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true"
+      aria-label="Mobile navigation">
+      <div class="drawer-header">
+        <a href="../index.html" class="logo">
+          <img src="../images/logo.jpg" alt="ICAN UK and District Society logo - Institute of Chartered Accountants of Nigeria">
+        </a>
+        <button type="button" id="mobile-close" class="mobile-close" aria-label="Close navigation menu">×</button>
+      </div>
+      <div class="drawer-body">
+        <div class="drawer-group">
+          <button type="button" class="drawer-accordion" aria-expanded="false" aria-controls="drawer-gov">
+            Governance
+          </button>
+          <div id="drawer-gov" class="drawer-panel" hidden>
+            <a href="committee.html" class="is-active-link" aria-current="page">Our Committee</a>
+            <a href="bye-law.html">Bye Laws</a>
+            <a href="executive.html">Executive Team</a>
+            <!-- <a href="#">Committee Lead</a> -->
+            <a href="past-chairs.html">Past Chair</a>
+          </div>
+        </div>
+        <div class="drawer-group">
+          <button type="button" class="drawer-accordion" aria-expanded="false" aria-controls="drawer-news">
+            News & Events
+          </button>
+          <div id="drawer-news" class="drawer-panel" hidden>
+            <a href="latest-news.html">News Latest</a>
+            <a href="events-calendar.html">Events Calendar</a>
+            <a href="events-calendar.html#upcoming-events">Upcoming Events</a>
+            <a href="events-calendar.html#monthly-meetings">Monthly Meetings</a>
+            <a href="events-calendar.html#resources">Meeting Packs</a>
+            <a href="events-calendar.html#past-events">Past Events</a>
+            <a href="#">Technical Resources</a>
+            <a href="#">Newsletters</a>
+          </div>
+        </div>
+        <a href="gallery.html" class="drawer-link">Gallery</a>
+        <a href="benevolent.html" class="drawer-link">Benevolent</a>
+        <a href="#" class="drawer-link">Register</a>
+        <a href="index.html#about" class="drawer-link">About Us</a>
+        <a href="#footer" class="drawer-link">Contact Us</a>
+        <a href="index.html#member-hub" class="drawer-link drawer-login">Member Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- Floating Section Index - Desktop Only -->
+    <nav class="section-index" aria-label="Governance sections">
+      <span class="section-index-label">COMMITTEE</span>
+      <div class="section-index-links">
+        <a href="#structure" class="si-link is-active" data-section="structure"><span>01</span> STRUCTURE</a>
+        <a href="#organisation" class="si-link" data-section="organisation"><span>02</span> ORGANISATION</a>
+        <a href="#executive" class="si-link" data-section="executive"><span>03</span> EXECUTIVE</a>
+        <a href="#standing" class="si-link" data-section="standing"><span>04</span> STANDING</a>
+        <a href="#past" class="si-link" data-section="past"><span>05</span> PAST CHAIRS</a>
+      </div>
+      <div class="section-index-progress">
+        <div class="si-progress-bar" id="si-progress"></div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="c-hero">
+      <div class="container c-hero-container">
+        <div class="c-hero-inner">
+          <div class="c-hero-left reveal">
+            <nav class="b-breadcrumb reveal" aria-label="Breadcrumb">
+              <a href="../index.html">Home</a><span class="sep">/</span>
+              <a href="../pages/our-committee.html">Governance</a><span class="sep">/</span><span class="current">Committee</span>
+            </nav>
+            <p class="eyebrow">Governance • Leadership • Service</p>
+            <h1 class="display c-hero-title">
+              <span class="c-hero-title-line">Leadership</span>
+              <span class="c-hero-title-line c-hero-title-line--accent">Behind the</span>
+              <span class="c-hero-title-line">District</span>
+            </h1>
+            <p class="c-hero-desc">The Executive Committee coordinates and controls the affairs of the Society,
+              regulating its membership and catering for the interests of members, supported by standing committees
+              serving every facet of professional life.</p>
+            <div class="c-hero-actions">
+              <a href="#executive" class="btn btn-primary">Meet the Executive</a>
+              <a href="#standing" class="btn btn-secondary">Standing Committees</a>
+            </div>
+            <div class="c-hero-meta">
+              <span>EST. 1988</span><i></i><span>UK DISTRICT SOCIETY</span><i></i><span>EXECUTIVE + STANDING
+                COMMITTEES</span>
+            </div>
+          </div>
+          <div class="c-hero-right reveal" style="transition-delay: .12s">
+            <div class="gov-visual-wrap">
+              <div class="gov-visual" id="gov-hero-visual" aria-hidden="false"
+                aria-label="Governance structure visualization">
+                <!-- Center -->
+                <div class="gv-center">
+                  <div class="gv-node gv-node--central">
+                    <span class="gv-node-kicker">ICAN UK</span>
+                    <strong>District Society</strong>
+                    <small>Chartered 1965 • Est. UK 1988</small>
+                  </div>
+                  <div class="gv-line gv-line--v"></div>
+                </div>
+                <!-- Executive -->
+                <div class="gv-exec">
+                  <div class="gv-node gv-node--exec is-highlight">
+                    <span class="gv-node-kicker">LEVEL 1</span>
+                    <strong>EXECUTIVE COMMITTEE</strong>
+                    <small>Coordinates & controls affairs</small>
+                    <span class="gv-node-index">10 + IPC</span>
+                  </div>
+                </div>
+                <!-- Connectors to standing -->
+                <div class="gv-connector-hub">
+                  <div class="gv-line gv-line--v short"></div>
+                  <div class="gv-line gv-line--h"></div>
+                </div>
+                <!-- Standing grid -->
+                <div class="gv-standing">
+                  <button class="gv-node gv-node--standing" data-committee="finance"
+                    aria-describedby="gov-desc"><span>01</span><strong>Finance</strong><small>Financial
+                      Control</small></button>
+                  <button class="gv-node gv-node--standing" data-committee="media"><span>02</span><strong>Media &
+                      Comms</strong><small>Communications</small></button>
+                  <button class="gv-node gv-node--standing"
+                    data-committee="membership"><span>03</span><strong>Membership &
+                      Regions</strong><small>Membership</small></button>
+                  <button class="gv-node gv-node--standing" data-committee="socials"><span>04</span><strong>Socials &
+                      Events</strong><small>Social Wellbeing</small></button>
+                  <button class="gv-node gv-node--standing"
+                    data-committee="conference"><span>05</span><strong>International
+                      Conf.</strong><small>Conference</small></button>
+                  <button class="gv-node gv-node--standing" data-committee="technical"><span>06</span><strong>Technical
+                      & CCAB</strong><small>Professional Dev.</small></button>
+                  <button class="gv-node gv-node--standing"
+                    data-committee="ethics"><span>07</span><strong>Ethics</strong><small>Ethics</small></button>
+                  <button class="gv-node gv-node--standing"
+                    data-committee="benevolent"><span>08</span><strong>Benevolent Fund</strong><small>Member
+                      Welfare</small></button>
+                  <button class="gv-node gv-node--standing"
+                    data-committee="partnership"><span>09</span><strong>Partnership</strong><small>Partnerships</small></button>
+                  <button class="gv-node gv-node--standing gv-node--patrons"
+                    data-committee="past"><span>10</span><strong>Past Chairs &
+                      Patrons</strong><small>Continuity</small></button>
+                </div>
+                <!-- Description panel -->
+                <div class="gv-detail" id="gov-detail" aria-live="polite" aria-atomic="true">
+                  <p class="eyebrow">Governance Map • Hover to explore</p>
+                  <p class="gv-detail-text">The Executive Committee sits at the centre, supported by ten standing
+                    committees delivering finance, communications, membership, events, technical standards and welfare.
+                  </p>
+                </div>
+              </div>
+              <!-- Depth elements -->
+              <div class="gv-depth-grid" aria-hidden="true"></div>
+              <div class="gv-depth-orb" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOVERNANCE INTRODUCTION -->
+    <section id="structure" class="section c-intro">
+      <div class="container">
+        <div class="c-intro-grid reveal">
+          <div class="c-intro-side">
+            <div class="c-intro-number">01</div>
+            <p class="eyebrow">Committee Structure</p>
+            <div class="c-intro-rule"></div>
+          </div>
+          <div class="c-intro-main">
+            <h2 class="display c-intro-heading">A governance structure built around service, coordination and member
+              interests.</h2>
+            <p class="c-intro-copy">The governance structure of the ICAN UK District society comprises of the Executive
+              Committee supported by various standing committees. The Executive Committee is responsible for
+              co-ordinating and controlling the affairs of the Society, regulating its membership and catering for the
+              interests of members.</p>
+            <div class="c-intro-flow" aria-hidden="true">
+              <div class="c-flow-node c-flow-node--primary"><strong>EXECUTIVE COMMITTEE</strong><span>Co-ordinates &
+                  Controls</span></div>
+              <div class="c-flow-arrow">↓</div>
+              <div class="c-flow-node c-flow-node--secondary"><strong>STANDING COMMITTEES</strong><span>Implements
+                  Programmes</span></div>
+              <div class="c-flow-arrow">↓</div>
+              <div class="c-flow-node c-flow-node--tertiary"><strong>MEMBERS • PROFESSIONAL DEVELOPMENT •
+                  COMMUNITY</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOVERNANCE ORGANISATION VISUALIZATION -->
+    <section id="organisation" class="section c-org">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Organisation</p>
+          <h2 class="display">How the Society is Organised</h2>
+          <p class="subhead">Three levels of responsibility  central coordination, specialist delivery, and member
+            impact.</p>
+        </div>
+
+        <div class="c-org-visual reveal">
+          <div class="c-org-level c-org-level--1">
+            <div class="org-central">
+              <div class="org-node org-node--central">
+                <span class="org-kicker">Level 1 • Central</span>
+                <h3>Executive Committee</h3>
+                <p>Coordinates and controls the affairs of the Society</p>
+                <div class="org-meta"><span>10 Elected</span><i></i><span>1 IPC Ex-Officio</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="c-org-connector"><span></span></div>
+
+          <div class="c-org-level c-org-level--2 reveal">
+            <div class="org-grid" id="org-grid">
+              <!-- JS will populate, but HTML fallback present -->
+              <article class="org-card" data-committee="finance" tabindex="0" aria-expanded="false"
+                aria-controls="org-detail-finance">
+                <div tabindex="0" role="button" aria-label="View committee details" class="org-card-head"><span class="org-index">01</span><span class="org-tag">Financial
+                    Control</span></div>
+                <h4>Finance Committee</h4>
+                <p class="org-desc">Ensure financial control and facilitate revenue generation.</p>
+                <span class="org-arrow">→</span>
+              </article>
+              <article class="org-card" data-committee="media" tabindex="0" aria-expanded="false">
+                <div tabindex="0" role="button" aria-label="View committee details" class="org-card-head"><span class="org-index">02</span><span class="org-tag">Communications</span>
+                </div>
+                <h4>Media & Communications</h4>
+                <p class="org-desc">Print, Email, Web, Social and IT needs of the District.</p>
+                <span class="org-arrow">→</span>
+              </article>
+              <article class="org-card" data-committee="membership" tabindex="0" aria-expanded="false">
+                <div tabindex="0" role="button" aria-label="View committee details" class="org-card-head"><span class="org-index">03</span><span class="org-tag">Membership</span>
+                </div>
+                <h4>Membership & Regions</h4>
+                <p class="org-desc">Safeguard database, mentorship, UK regions engagement.</p>
+                <span class="org-arrow">→</span>
+              </article>
+              <article class="org-card" data-committee="socials" tabindex="0" aria-expanded="false">
+                <div tabindex="0" role="button" aria-label="View committee details" class="org-card-head"><span class="org-index">04</span><span class="org-tag">Social
+                    Wellbeing</span></div>
+                <h4>Socials & Events</h4>
+                <p class="org-desc">Members’ social wellbeing and district social events.</p>
+                <span class="org-arrow">→</span>
+              </article>
+              <article class="org-card" data-committee="conference" tabindex="0" aria-expanded="false">
+                <div tabindex="0" role="button" aria-label="View committee details" class="org-card-head"><span class="org-index">05</span><span class="org-tag">Conference</span>
+                </div>
+                <h4>International Conference</h4>
+                <p class="org-desc">Organise and deliver the annual International Conference.</p>
+                <span class="org-arrow">→</span>
+              </article>
+              <article class="org-card" data-committee="technical" tabindex="0" aria-expanded="false">
+                <div tabindex="0" role="button" aria-label="View committee details" class="org-card-head"><span class="org-index">06</span><span class="org-tag">Professional
+                    Dev</span></div>
+                <h4>Technical, CCAB & Skills</h4>
+                <p class="org-desc">Technical sessions, CPD, relationship with CCAB bodies.</p>
+                <span class="org-arrow">→</span>
+              </article>
+              <article class="org-card" data-committee="ethics" tabindex="0" aria-expanded="false">
+                <div tabindex="0" role="button" aria-label="View committee details" class="org-card-head"><span class="org-index">07</span><span class="org-tag">Ethics</span></div>
+                <h4>Ethics Committee</h4>
+                <p class="org-desc">Code of conduct, protocol, Bye-Law concessions.</p>
+                <span class="org-arrow">→</span>
+              </article>
+              <article class="org-card org-card--warm" data-committee="benevolent" tabindex="0" aria-expanded="false">
+                <div tabindex="0" role="button" aria-label="View committee details" class="org-card-head"><span class="org-index">08</span><span class="org-tag">Member Welfare</span>
+                </div>
+                <h4>Benevolent Fund</h4>
+                <p class="org-desc">Demonstrating commitment to professional excellence and social well-being.</p>
+                <span class="org-arrow">→</span>
+              </article>
+              <article class="org-card" data-committee="partnership" tabindex="0" aria-expanded="false">
+                <div tabindex="0" role="button" aria-label="View committee details" class="org-card-head"><span class="org-index">09</span><span class="org-tag">Partnerships</span>
+                </div>
+                <h4>Partnership & Sponsors</h4>
+                <p class="org-desc">Sponsors, partnerships with professional bodies.</p>
+                <span class="org-arrow">→</span>
+              </article>
+              <article class="org-card org-card--archive" data-committee="past" tabindex="0" aria-expanded="false">
+                <div tabindex="0" role="button" aria-label="View committee details" class="org-card-head"><span class="org-index">10</span><span class="org-tag">Continuity</span>
+                </div>
+                <h4>Past Chairs & Patrons</h4>
+                <p class="org-desc">Advises Executive, supports major events.</p>
+                <span class="org-arrow">→</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="c-org-level c-org-level--3 reveal">
+            <div class="org-impact">
+              <span class="org-impact-item">Financial Control</span>
+              <span class="org-impact-item">Communications</span>
+              <span class="org-impact-item">Membership Growth</span>
+              <span class="org-impact-item">Social Wellbeing</span>
+              <span class="org-impact-item">International Conference</span>
+              <span class="org-impact-item">Professional Development</span>
+              <span class="org-impact-item">Ethics</span>
+              <span class="org-impact-item">Member Welfare</span>
+              <span class="org-impact-item">Partnerships</span>
+              <span class="org-impact-item">Institutional Continuity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXECUTIVE COMMITTEE -->
+    <section id="executive" class="section c-executive">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Executive Committee</p>
+          <h2 class="display">The Executive Committee</h2>
+          <p class="subhead">The committee consists of 10 elected members and the Immediate Past Chair (IPC) in an
+            ex-officio capacity, each holding one of the following positions:</p>
+        </div>
+
+        <div class="exec-grid reveal" id="exec-grid">
+          <!-- Featured Chairman -->
+          <article class="exec-card exec-card--featured" tabindex="0">
+            <div class="exec-card-top">
+              <span class="exec-index">01</span>
+              <span class="exec-status">Elected • Leadership</span>
+            </div>
+            <h3>Chairman</h3>
+            <p class="exec-role-desc">Leadership of the Society</p>
+            <div class="exec-card-foot"><span class="exec-line"></span><span class="exec-arrow">→</span></div>
+          </article>
+
+          <article class="exec-card exec-card--vice" tabindex="0">
+            <div class="exec-card-top"><span class="exec-index">02</span><span class="exec-status">Elected</span></div>
+            <h3>Vice Chairman</h3>
+            <div class="exec-card-foot"><span class="exec-line"></span><span class="exec-arrow">→</span></div>
+          </article>
+
+          <article class="exec-card exec-card--sec" tabindex="0">
+            <div class="exec-card-top"><span class="exec-index">03</span><span class="exec-status">Elected</span></div>
+            <h3>General Secretary</h3>
+            <div class="exec-card-foot"><span class="exec-line"></span><span class="exec-arrow">→</span></div>
+          </article>
+
+          <article class="exec-card" tabindex="0">
+            <div class="exec-card-top"><span class="exec-index">04</span></div>
+            <h3>Assistant General Secretary</h3>
+            <div class="exec-card-foot"><span class="exec-line"></span><span class="exec-arrow">→</span></div>
+          </article>
+
+          <article class="exec-card" tabindex="0">
+            <div class="exec-card-top"><span class="exec-index">05</span></div>
+            <h3>Financial Secretary</h3>
+            <div class="exec-card-foot"><span class="exec-line"></span><span class="exec-arrow">→</span></div>
+          </article>
+
+          <article class="exec-card" tabindex="0">
+            <div class="exec-card-top"><span class="exec-index">06</span></div>
+            <h3>Treasurer</h3>
+            <div class="exec-card-foot"><span class="exec-line"></span><span class="exec-arrow">→</span></div>
+          </article>
+
+          <article class="exec-card" tabindex="0">
+            <div class="exec-card-top"><span class="exec-index">07</span></div>
+            <h3>Technical Secretary</h3>
+            <div class="exec-card-foot"><span class="exec-line"></span><span class="exec-arrow">→</span></div>
+          </article>
+
+          <article class="exec-card" tabindex="0">
+            <div class="exec-card-top"><span class="exec-index">08</span></div>
+            <h3>Social & Events Secretary</h3>
+            <div class="exec-card-foot"><span class="exec-line"></span><span class="exec-arrow">→</span></div>
+          </article>
+
+          <article class="exec-card exec-card--exofficio" tabindex="0">
+            <div class="exec-card-top"><span class="exec-index">09</span><span class="exec-status">2 Elected
+                Members</span></div>
+            <h3>Ex-Officio Members</h3>
+            <p class="exec-role-desc">Elected members supporting Executive functions</p>
+            <div class="exec-card-foot"><span class="exec-line"></span><span class="exec-arrow">→</span></div>
+          </article>
+
+          <article class="exec-card exec-card--ipc" tabindex="0">
+            <div class="exec-card-top"><span class="exec-index">10</span><span class="exec-status">Ex-Officio •
+                IPC</span></div>
+            <h3>Immediate Past Chair</h3>
+            <p class="exec-role-desc">Ex-Officio Exco Member • Continuity & Guidance</p>
+            <div class="exec-card-foot"><span class="exec-line"></span><span class="exec-arrow">→</span></div>
+            <div class="exec-placeholder"><span>Continuity role  advises on matters referred by Executive</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STANDING COMMITTEES -->
+    <section id="standing" class="section c-standing">
+      <div class="container">
+        <div class="c-standing-intro reveal">
+          <div class="c-standing-head">
+            <p class="eyebrow">Standing Committees</p>
+            <h2 class="display">The Committees Supporting the Executive</h2>
+          </div>
+          <div class="c-standing-copy">
+            <p>The Executive committee constitutes various standing committees to assist in implementing its programmes.
+              Officers of the standing-committees are appointed by the Executive Committee while membership is open to
+              all members of the District Society.</p>
+            <p>There is a Committee of Past Chairs and Patrons, where membership is of all Past Chairs and Patrons of
+              the District Society.</p>
+          </div>
+        </div>
+
+        <div class="standing-list reveal" id="standing-list" role="list">
+          <!-- Finance -->
+          <div class="standing-item" role="listitem" data-committee="finance">
+            <button class="standing-trigger" aria-expanded="false" aria-controls="standing-finance"
+              id="trigger-finance">
+              <span class="standing-index">01</span>
+              <span class="standing-title">Finance Committee</span>
+              <span class="standing-tag">Financial Control</span>
+              <span class="standing-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="standing-finance" class="standing-panel" hidden>
+              <div class="standing-panel-inner">
+                <div class="standing-meta"><span class="eyebrow">Objective</span><span class="standing-category">Finance
+                    • Revenue • Control</span></div>
+                <p>The Committee's objective is to ensure financial control in the District's affairs and facilitate
+                  revenue generation.</p>
+                <div class="standing-leadership">
+                  <div class="standing-leader">
+                    <span class="standing-leader-role">Chair</span>
+                    <strong>Benjamin Ajayi</strong>
+                  </div>
+                  <div class="standing-leader">
+                    <span class="standing-leader-role">Secretary</span>
+                    <strong>Nnewima Nwafor-Orizu</strong>
+                  </div>
+                </div>
+                <div class="standing-foot"><span>Chair appointed by Executive • Membership open to all members</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Media -->
+          <div class="standing-item" role="listitem" data-committee="media">
+            <button class="standing-trigger" aria-expanded="false" aria-controls="standing-media" id="trigger-media">
+              <span class="standing-index">02</span>
+              <span class="standing-title">Media and Communications Committee</span>
+              <span class="standing-tag">Communications</span>
+              <span class="standing-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="standing-media" class="standing-panel" hidden>
+              <div class="standing-panel-inner">
+                <div class="standing-meta"><span class="eyebrow">Objective</span><span class="standing-category">Print •
+                    Email • Web • Social • IT</span></div>
+                <p>The Committee's objective are to deliver all media and communication needs of the district - Print,
+                  Email, Web, Social media etc; as well as deliver all Information Technology needs of the District.</p>
+                <div class="standing-leadership">
+                  <div class="standing-leader">
+                    <span class="standing-leader-role">Chair</span>
+                    <strong>Nnenna Anyanwu</strong>
+                  </div>
+                  <div class="standing-leader">
+                    <span class="standing-leader-role">Secretary</span>
+                    <strong>Nojeem Yusuf</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Membership -->
+          <div class="standing-item" role="listitem" data-committee="membership">
+            <button class="standing-trigger" aria-expanded="false" aria-controls="standing-membership"
+              id="trigger-membership">
+              <span class="standing-index">03</span>
+              <span class="standing-title">Membership and Regions</span>
+              <span class="standing-tag">Membership</span>
+              <span class="standing-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="standing-membership" class="standing-panel" hidden>
+              <div class="standing-panel-inner">
+                <div class="standing-meta"><span class="eyebrow">Objective</span><span
+                    class="standing-category">Database • Dormant • Mentorship • Regions</span></div>
+                <p>The Committee's objectives are to manage and safeguard the membership database, reach out to dormant
+                  members and expand District's membership base; provide adequate mentorship programmes as well as reach
+                  out to and involve members located in other United Kingdom regions in District activities.</p>
+                <div class="standing-leadership">
+                  <div class="standing-leader">
+                    <span class="standing-leader-role">Chair</span>
+                    <strong>Tope Imevbore</strong>
+                  </div>
+                  <div class="standing-leader">
+                    <span class="standing-leader-role">Secretary</span>
+                    <strong>Chinasa Mbachu</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Socials -->
+          <div class="standing-item" role="listitem" data-committee="socials">
+            <button class="standing-trigger" aria-expanded="false" aria-controls="standing-socials"
+              id="trigger-socials">
+              <span class="standing-index">04</span>
+              <span class="standing-title">Socials and Events Committee</span>
+              <span class="standing-tag">Social Wellbeing</span>
+              <span class="standing-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="standing-socials" class="standing-panel" hidden>
+              <div class="standing-panel-inner">
+                <div class="standing-meta"><span class="eyebrow">Objective</span><span
+                    class="standing-category">Wellbeing • Socials</span></div>
+                <p>The Committee's objective is to facilitate Members’ social wellbeing and organise all district social
+                  events.</p>
+                <div class="standing-leadership">
+                  <div class="standing-leader">
+                    <span class="standing-leader-role">Chair</span>
+                    <strong>Wunmi Hassan</strong>
+                  </div>
+                  <div class="standing-leader">
+                    <span class="standing-leader-role">Secretary</span>
+                    <strong>Olayinka Oluwi</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- International Conference -->
+          <div class="standing-item" role="listitem" data-committee="conference">
+            <button class="standing-trigger" aria-expanded="false" aria-controls="standing-conference"
+              id="trigger-conference">
+              <span class="standing-index">05</span>
+              <span class="standing-title">International Conference Committee</span>
+              <span class="standing-tag">Conference</span>
+              <span class="standing-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="standing-conference" class="standing-panel" hidden>
+              <div class="standing-panel-inner">
+                <div class="standing-meta"><span class="eyebrow">Objective</span><span class="standing-category">Annual
+                    Conference • Programme • Delivery</span></div>
+                <p>The Committee's objective is to organise and deliver the District's annual International Conference.
+                </p>
+                <div class="standing-leadership">
+                  <div class="standing-leader">
+                    <span class="standing-leader-role">Chair</span>
+                    <strong>Tayo Animashaun</strong>
+                  </div>
+                  <div class="standing-leader">
+                    <span class="standing-leader-role">Secretary</span>
+                    <strong>Kemi Phillips</strong>
+                  </div>
+                </div>
+                <div class="standing-foot"><span>Works closely with Executive • Venue, Sponsors, Programme</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical -->
+          <div class="standing-item" role="listitem" data-committee="technical">
+            <button class="standing-trigger" aria-expanded="false" aria-controls="standing-technical"
+              id="trigger-technical">
+              <span class="standing-index">06</span>
+              <span class="standing-title">Technical, CCAB and Skills Committee</span>
+              <span class="standing-tag">Professional Dev</span>
+              <span class="standing-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="standing-technical" class="standing-panel" hidden>
+              <div class="standing-panel-inner">
+                <div class="standing-meta"><span class="eyebrow">Objective</span><span
+                    class="standing-category">Technical • CPD • CCAB • Skills</span></div>
+                <p>The Committee's objective is to organise technical sessions which are accredited by The Institute,
+                  with aim to fulfil skills and professional development needs of members; ensure harmonious
+                  relationship with other CCAB bodies.</p>
+                <div class="standing-leadership">
+                  <div class="standing-leader">
+                    <span class="standing-leader-role">Chair</span>
+                    <strong>Seyi Bamisaye</strong>
+                  </div>
+                  <div class="standing-leader">
+                    <span class="standing-leader-role">Secretary</span>
+                    <strong>Franklin Nakpodia</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ethics -->
+          <div class="standing-item" role="listitem" data-committee="ethics">
+            <button class="standing-trigger" aria-expanded="false" aria-controls="standing-ethics" id="trigger-ethics">
+              <span class="standing-index">07</span>
+              <span class="standing-title">Ethics Committee</span>
+              <span class="standing-tag">Ethics</span>
+              <span class="standing-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="standing-ethics" class="standing-panel" hidden>
+              <div class="standing-panel-inner">
+                <div class="standing-meta"><span class="eyebrow">Objective</span><span class="standing-category">Code •
+                    Protocol • Bye-Laws</span></div>
+                <p>The Committee's objectives are to develop a code of conduct for members of the ICAN UK and District
+                  Society and ensure protocol at all meetings (including timeliness); deliver appropriate and relevant
+                  Bye-Law concessions to ensure continued harmony - ensure concessions granted to previous Caretaker
+                  Committee is extended for at least 3 years.</p>
+                <div class="standing-leadership">
+                  <div class="standing-leader">
+                    <span class="standing-leader-role">Chair</span>
+                    <strong>Yetunde Raimi-Odimayo</strong>
+                  </div>
+                  <div class="standing-leader">
+                    <span class="standing-leader-role">Secretary</span>
+                    <strong>Abiola Elizabeth James</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Benevolent -->
+          <div class="standing-item standing-item--benevolent" role="listitem" data-committee="benevolent">
+            <button class="standing-trigger" aria-expanded="false" aria-controls="standing-benevolent"
+              id="trigger-benevolent">
+              <span class="standing-index">08</span>
+              <span class="standing-title">Benevolent Fund</span>
+              <span class="standing-tag">Member Welfare</span>
+              <span class="standing-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="standing-benevolent" class="standing-panel" hidden>
+              <div class="standing-panel-inner">
+                <div class="standing-meta"><span class="eyebrow">Objective • Established 2014</span><span
+                    class="standing-category">Welfare • Support</span></div>
+                <p>This fund was set up by the pioneers of ICAN UK and the District Society in 2014. It is to serve as a
+                  practical way of demonstrating the District’s commitment to part of its mission to “… help our members
+                  achieve professional excellence and social well-being …”</p>
+                <div class="benevolent-feature">
+                  <div class="benevolent-feature-inner">
+                    <strong>Benevolent Fund</strong>
+                    <p>Member support rooted in the Society’s mission  professional excellence and social well-being.
+                      Established by the pioneers in 2014.</p>
+                    <span>Confidential support • Welfare • Community care</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Partnership -->
+          <div class="standing-item" role="listitem" data-committee="partnership">
+            <button class="standing-trigger" aria-expanded="false" aria-controls="standing-partnership"
+              id="trigger-partnership">
+              <span class="standing-index">09</span>
+              <span class="standing-title">Partnership & Sponsors Committee</span>
+              <span class="standing-tag">Partnerships</span>
+              <span class="standing-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="standing-partnership" class="standing-panel" hidden>
+              <div class="standing-panel-inner">
+                <div class="standing-meta"><span class="eyebrow">Objective</span><span
+                    class="standing-category">Sponsors • Partnerships • Professional Bodies</span></div>
+                <p>Reach out to sponsors - exiting and seek new sponsors / UK-based & Nigeria based, and form new
+                  partnerships with other professional bodies.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Past Chairs -->
+          <div class="standing-item standing-item--past" role="listitem" data-committee="past">
+            <button class="standing-trigger" aria-expanded="false" aria-controls="standing-past" id="trigger-past">
+              <span class="standing-index">10</span>
+              <span class="standing-title">Committee of Past Chairs and Patrons</span>
+              <span class="standing-tag">Continuity</span>
+              <span class="standing-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="standing-past" class="standing-panel" hidden>
+              <div class="standing-panel-inner">
+                <div class="standing-meta"><span class="eyebrow">Objective</span><span
+                    class="standing-category">Experience • Guidance • Continuity</span></div>
+                <p>The committee of Past Chairs and Patrons advises the Executive Committee on matters referred to it by
+                  the Executive Committee and supports the Executive Committee at major events organised by the Society.
+                </p>
+                <div class="standing-leadership">
+                  <div class="standing-leader">
+                    <span class="standing-leader-role">Chair</span>
+                    <strong>David Fadipe</strong>
+                  </div>
+                  <div class="standing-leader">
+                    <span class="standing-leader-role">Secretary</span>
+                    <strong>Segun Omorayewa</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAST CHAIRS & PATRONS - Archival -->
+    <section id="past" class="section c-past">
+      <div class="container">
+        <div class="c-past-grid reveal">
+          <div class="c-past-left">
+            <p class="eyebrow">Continuity & Experience</p>
+            <h2 class="display">Committee of Past Chairs and Patrons</h2>
+            <p class="c-past-desc">The committee of Past Chairs and Patrons advises the Executive Committee on matters
+              referred to it by the Executive Committee and supports the Executive Committee at major events organised
+              by the Society.</p>
+            <div class="c-past-structure">
+              <div class="past-line"><span class="past-dot"></span>
+                <div class="past-content"><strong>PAST CHAIRS</strong><span>Experience</span></div>
+              </div>
+              <div class="past-branch">
+                <div class="past-branch-line"></div>
+                <div class="past-branch-items">
+                  <div class="past-branch-item"><span>EXPERIENCE</span></div>
+                  <div class="past-branch-item"><span>GUIDANCE</span></div>
+                  <div class="past-branch-item"><span>CONTINUITY</span></div>
+                </div>
+              </div>
+              <div class="past-arrow">↓</div>
+              <div class="past-exec-pill">EXECUTIVE COMMITTEE</div>
+            </div>
+            <div class="c-past-placeholder">
+              <p><strong>Ready for archival integration:</strong> Past Chairs list, tenure, photographs, patron
+                profiles, and major event support history can be inserted here without redesign. No fabricated names
+                included.</p>
+              <div class="past-placeholder-grid">
+                <div class="past-ph-item"><span>Past Chair Name</span><small>Tenure • Photo placeholder</small></div>
+                <div class="past-ph-item"><span>Past Chair Name</span><small>Tenure • Photo placeholder</small></div>
+                <div class="past-ph-item"><span>Patron Name</span><small>Patron • Photo placeholder</small></div>
+              </div>
+            </div>
+          </div>
+          <div class="c-past-right">
+            <div class="past-editorial-card">
+              <div class="past-card-top"><span>EST. 1988</span><span>•</span><span>INSTITUTIONAL MEMORY</span></div>
+              <div class="past-card-main">
+                <div class="past-stat"><strong>10+</strong><span>Committees advised</span></div>
+                <div class="past-divider"></div>
+                <div class="past-quote">
+                  <p>“Continuity ensures the Society’s values endure while its programmes evolve.”</p>
+                  <small>Institutional principle  Past Chairs & Patrons</small>
+                </div>
+                <div class="past-card-foot">
+                  <span class="past-foot-tag">Advisory</span>
+                  <span class="past-foot-tag">Major Events</span>
+                  <span class="past-foot-tag">Executive Referral</span>
+                </div>
+              </div>
+              <div class="past-depth" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOVERNANCE CTA -->
+    <section class="section c-cta">
+      <div class="container">
+        <div class="cta-panel reveal c-cta-panel">
+          <div class="cta-depth" aria-hidden="true">
+            <div class="cta-light"></div>
+            <div class="cta-gridline"></div>
+            <div class="cta-brass-orb"></div>
+          </div>
+          <div class="cta-main">
+            <div class="cta-content">
+              <p class="eyebrow" style="color:var(--color-brass)">Governance • Community • Professional Excellence</p>
+              <h2 class="display" style="color:var(--color-ivory)">A Society Built Through Service</h2>
+              <p>Governance is stewardship. Every committee exists to serve members, safeguard standards, and strengthen
+                community  from CPD and technical excellence to welfare and international conference.</p>
+              <div class="cta-bullets"><span>Chartered Act 1965</span><span>UK District Est. 1988</span><span>550+
+                  Members</span></div>
+              <div class="cta-actions"><a href="#" class="btn btn-cta-primary">Explore Membership →</a><a href="#"
+                  class="btn btn-cta-secondary">Explore Events</a></div>
+            </div>
+            <div class="cta-visual" aria-hidden="true">
+              <figure class="cta-img cta-img--main"><img src="../images/ICANUKPICNIC241.jpg" alt="Members of ICAN UK community at annual picnic gathering in London" loading="lazy">
+              </figure>
+              <figure class="cta-img cta-img--small"><img src="../images/Gallery1.jpeg" alt="Members celebrating at ICAN UK annual gala dinner" loading="lazy"><span
+                  class="cta-badge">Governance • Annual Gala</span></figure>
+              <div class="cta-float-card"><strong>10</strong><span>Standing Committees</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER  -->
+  <footer id="footer" class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo footer-logo">
+          <img src="../images/logo-2.png" alt="ICAN UK and District Society logo - Institute of Chartered Accountants of Nigeria">
+        </div>
+        <p class="footer-summary">A distinguished professional community representing, supporting and elevating Nigerian
+          chartered accountants across the UK.</p>
+        <p class="footer-address">Registered office address – Coker Isah & Coker; 74 Church Road, Crystal Palace,
+        London. SE19 2EZ</p>
+      </div>
+      <div class="footer-col">
+        <h4>Governance</h4>
+        <ul>
+          <li><a href="committee.html" class="is-active-link" aria-current="page">Our Committee</a></li>
+          <li><a href="bye-law.html">Bye Laws</a></li>
+          <li><a href="executive.html">Executive Team</a></li>
+          <!-- <li><a href="#">Committee Lead</a></li> -->
+          <li><a href="past-chairs.html">Past Chair</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources & Events</h4>
+        <ul>
+          <li><a href="latest-news.html">Latest News</a></li>
+          <li><a href="#">Technical Resources</a></li>
+          <li><a href="#">Newsletters</a></li>
+          <li><a href="#">Monthly Meetings</a></li>
+          <li><a href="#">Upcoming Events</a></li>
+          <li><a href="#">Meeting Packs</a></li>
+          <li><a href="#">Past Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><span>Email: generalsecretary@ican-uk.org</span></li>
+          <li><span>Phone: +44 7535 230 605, +44 7894 069 959</span></li>
+          <!-- <li><span>Social: [configurable]</span></li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container bottom-inner">
+        <p>Copyright © ICAN UK & District Society. All Rights Reserved.</p>
+        <p class="compliance">Chartered Accountants Act 1965 compliance notice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top"><span aria-hidden="true">↑</span><span class="visually-hidden">Back to top</span></button>
+  <script src="../js/script.js"></script>
+  <script src="../js/committee.js"></script>
+</body>
+
+</html>

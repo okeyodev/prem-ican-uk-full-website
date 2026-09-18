@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17242D">
+  <title>ICAN UK & District Society | The Foremost International District</title>
+  <meta name="description"
+    content="ICAN UK & District Society connects over 550 Chartered Accountants across the United Kingdom  Est. 1988.">
+  <!-- GOOGLE FONTS: You can change fonts here. Currently Inter + Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- WCAG 2.2: Skip to main content - bypass blocks 2.4.1 -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ================= SCROLL PROGRESS BAR =================
+  EDIT: Color in css --color-brass. No HTML edit needed.
+-->
+  <div id="scroll-progress" class="scroll-progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+  <!-- ================= HEADER / STICKY NAVIGATION =================
+  EDIT LOGO: Change text in.logo-mark and.logo-text
+  EDIT MENU: Add/remove <li> in.nav-list
+  MEGA MENU: Edit links inside #mega-governance and #mega-news
+  MOBILE: Same links duplicated in #mobile-drawer for mobile
+  STICKY: Controlled in css.site-header { position:sticky; top:0; }
+-->
+
+  <header id="site-header" class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <!-- <span class="logo-mark">ICAN</span> -->
+        <img src="images/logo.jpg" alt="ICAN UK and District Society logo - Institute of Chartered Accountants of Nigeria">
+        <!-- <span class="logo-text"><strong>UK & District Society</strong><small>Institute of Chartered Accountants of Nigeria</small></span> -->
+      </a>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <!-- GOVERNANCE MEGA MENU -->
+          <li class="nav-item has-mega" data-mega>
+            <button type="button" class="nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="mega-governance" id="trigger-governance">
+              Governance
+            </button>
+            <div id="mega-governance" class="mega-menu">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4>Governance</h4>
+                  <p class="mega-desc">Oversight, standards and continuity.</p>
+                </div>
+                <ul class="mega-links">
+                  <li><a href="pages/committee.html">Our Committee</a></li>
+                  <li><a href="pages/bye-law.html">Bye Laws</a></li>
+                  <li><a href="pages/executive.html">Executive Team</a></li>
+                  <!-- <li><a href="#">Committee Lead</a></li> -->
+                  <li><a href="pages/past-chairs.html">Past Chair</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- NEWS & EVENTS MEGA MENU -->
+          <li class="nav-item has-mega" data-mega>
+            <button type="button" class="nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="mega-news" id="trigger-news">
+              News & Events
+            </button>
+            <div id="mega-news" class="mega-menu">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4>Knowledge & Gathering</h4>
+                  <p class="mega-desc">CPD, technical resources and community.</p>
+                </div>
+                <ul class="mega-links">
+                  <li><a href="pages/latest-news.html" >News Latest</a></li>
+                  <li><a href="pages/events-calendar.html">Events Calendar</a></li>
+                  <li><a href="pages/events-calendar.html#upcoming-events">Upcoming Events</a></li>
+                  <li><a href="pages/events-calendar.html#monthly-meetings">Monthly Meetings</a></li>
+                  <li><a href="pages/events-calendar.html#resources">Meeting Packs</a></li>
+                  <li><a href="pages/events-calendar.html#past-events">Past Events</a></li>
+                  <li><a href="#">Technical Resources</a></li>
+                  <li><a href="#">Newsletters</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- SINGLE LINKS - EDIT HERE -->
+          <li class="nav-item"><a href="pages/gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="pages/benevolent.html" class="nav-link">Benevolent</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Register</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#footer" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#member-hub" class="btn btn-primary header-join">Member Login</a>
+        <!-- HAMBURGER - VISIBLE ON TABLET/MOBILE ONLY -->
+        <button type="button" id="mobile-toggle" class="mobile-toggle" aria-expanded="false" aria-controls="mobile-drawer"
+          aria-label="Open navigation">
+          <span class="hamburger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
+        </button>
+      </div>
+    </div>
+    <!-- OVERLAY: dark background when mobile menu open - JS controls display -->
+    <div id="nav-overlay" class="nav-overlay" hidden style="display:none"></div>
+    <!-- MOBILE DRAWER  -->
+    <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true"
+      aria-label="Mobile navigation">
+      <div class="drawer-header">
+        <a href="#" class="logo">
+          <img src="images/logo.jpg" alt="ICAN UK and District Society logo - Institute of Chartered Accountants of Nigeria">
+        </a>
+        <button type="button" id="mobile-close" class="mobile-close" aria-label="Close navigation menu">×</button>
+      </div>
+      <div class="drawer-body">
+        <div class="drawer-group">
+          <button type="button" class="drawer-accordion" aria-expanded="false" aria-controls="drawer-gov">
+            Governance
+          </button>
+          <div id="drawer-gov" class="drawer-panel" hidden>
+            <a href="pages/committee.html">Our Committee</a>
+            <a href="pages/bye-law.html">Bye Laws</a>
+            <a href="pages/executive.html">Executive Team</a>
+            <!-- <a href="#">Committee Lead</a> -->
+            <a href="pages/past-chairs.html">Past Chair</a>
+          </div>
+        </div>
+        <div class="drawer-group">
+          <button type="button" class="drawer-accordion" aria-expanded="false" aria-controls="drawer-news">
+            News & Events
+          </button>
+          <div id="drawer-news" class="drawer-panel" hidden>
+            <a href="pages/latest-news.html" >News Latest</a>
+            <a href="pages/events-calendar.html">Events Calendar</a>
+            <a href="pages/events-calendar.html#upcoming-events">Upcoming Events</a>
+            <a href="pages/events-calendar.html#monthly-meetings">Monthly Meetings</a>
+            <a href="pages/events-calendar.html#resources">Meeting Packs</a>
+            <a href="pages/events-calendar.html#past-events">Past Events</a>
+            <a href="#">Technical Resources</a>
+            <a href="#">Newsletters</a>
+          </div>
+        </div>
+        <a href="pages/gallery.html" class="drawer-link">Gallery</a>
+        <a href="pages/benevolent.html" class="drawer-link">Benevolent</a>
+        <a href="#" class="drawer-link">Register</a>
+        <a href="#about" class="drawer-link">About Us</a>
+        <a href="#footer" class="drawer-link">Contact Us</a>
+        <a href="#member-hub" class="drawer-link drawer-login">Member Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- Floating Section Index - Desktop Only -->
+    <nav class="section-index" aria-label="Homepage sections">
+      <span class="section-index-label">HOME</span>
+      <div class="section-index-links">
+        <a href="#about" class="si-link is-active" data-section="about"><span>01</span> ABOUT</a>
+        <a href="#timeline" class="si-link" data-section="timeline"><span>02</span> HERITAGE</a>
+        <a href="#pillars" class="si-link" data-section="pillars"><span>03</span> PILLARS</a>
+        <a href="#conference" class="si-link" data-section="conference"><span>04</span> CONFERENCE</a>
+        <a href="#member-hub" class="si-link" data-section="member-hub"><span>05</span> MEMBER HUB</a>
+        <a href="#membership" class="si-link" data-section="membership"><span>06</span> JOIN US</a>
+      </div>
+      <div class="section-index-progress">
+        <div class="si-progress-bar" id="si-progress"></div>
+      </div>
+    </nav>
+
+
+
+    <!-- ================= NEW HERO: PROFESSIONAL INSTITUTION + PEOPLE + CREDENTIALS =================
+    STRUCTURE: People-centered, large group photo as central anchor, floating institutional cards
+    -->
+    <section id="hero" class="hero-pro" aria-label="ICAN UK Hero">
+      <div class="hero-pro-bg" aria-hidden="true">
+        <div class="hero-pro-bg-grid"></div>
+        <div class="hero-pro-bg-orb hero-pro-bg-orb--1"></div>
+        <div class="hero-pro-bg-orb hero-pro-bg-orb--2"></div>
+      </div>
+
+      <div class="container hero-pro-container">
+        <div class="hero-pro-stage" id="hero-pro-stage">
+          <div class="hero-pro-network" aria-hidden="true">
+            <svg viewBox="0 0 800 200" preserveAspectRatio="none">
+              <path d="M 50 20 C 200 40, 300 120, 400 100 S 600 60, 750 140" stroke="rgba(17,24,32,0.08)"
+                stroke-width="1" fill="none" stroke-dasharray="6 6" />
+              <circle cx="50" cy="20" r="4" fill="#B09563" />
+              <circle cx="750" cy="140" r="4" fill="#B09563" />
+            </svg>
+            <span class="hero-pro-network-label hero-pro-network-label--uk">UK</span>
+            <span class="hero-pro-network-label hero-pro-network-label--ng">NIGERIA</span>
+          </div>
+
+          <div class="hero-pro-photo-wrap" id="hero-pro-photo-wrap">
+            <div class="hero-pro-slides" id="hero-pro-slides">
+              <!-- Slide 0 Heritage -->
+              <div class="hero-pro-slide is-active" data-slide="0">
+                <figure class="hero-pro-photo">
+                  <img src="images/ICANUKPICNIC241.jpg" alt="Heritage" loading="eager" fetchpriority="high">
+                  <div class="hero-pro-photo-vignette" aria-hidden="true"></div>
+                  <figcaption class="hero-pro-photo-caption">Est. 1988 • Heritage • London</figcaption>
+                </figure>
+                <div class="hero-pro-slide-overlay">
+                  <div class="hero-pro-slide-badge">HERITAGE • EST. 1988</div>
+                  <h2 class="hero-pro-slide-title">Three Decades of Professional Excellence</h2>
+                  <p class="hero-pro-slide-desc">Founded in London in 1988, ICAN UK has grown into the foremost
+                    international district a bridge between standards, service and community.</p>
+                  <div class="hero-pro-slide-actions">
+                    <a href="#about" class="btn btn-primary hero-pro-slide-btn">Explore Our Story →</a>
+                    <a href="#timeline" class="hero-pro-slide-link">View Timeline</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 1 Conference -->
+              <div class="hero-pro-slide" data-slide="1">
+                <figure class="hero-pro-photo">
+                  <img src="images/magazine/Conference_IMG-20251127-WA0003.jpg" alt="Conference" loading="lazy">
+                  <div class="hero-pro-photo-vignette" aria-hidden="true"></div>
+                  <figcaption class="hero-pro-photo-caption">Annual Conference • London • 2024</figcaption>
+                </figure>
+                <div class="hero-pro-slide-overlay">
+                  <div class="hero-pro-slide-badge">ANNUAL CONFERENCE • 24 OCT • LONDON</div>
+                  <h2 class="hero-pro-slide-title">Where Professionals Connect & Lead</h2>
+                  <p class="hero-pro-slide-desc">Join 550+ chartered accountants for CPD, technical insights, and
+                    community. The flagship gathering of Nigerian professionals in the UK.</p>
+                  <div class="hero-pro-slide-actions">
+                    <a href="#conference" class="btn btn-primary hero-pro-slide-btn">View Programme →</a>
+                    <a href="#countdown" class="hero-pro-slide-link">Conference Countdown</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 2 Community -->
+              <div class="hero-pro-slide" data-slide="2">
+                <figure class="hero-pro-photo">
+                  <img src="images/conf-prev.jpg" alt="Community" loading="lazy">
+                  <div class="hero-pro-photo-vignette" aria-hidden="true"></div>
+                  <figcaption class="hero-pro-photo-caption">Community • Mentorship • Leadership</figcaption>
+                </figure>
+                <div class="hero-pro-slide-overlay">
+                  <div class="hero-pro-slide-badge">COMMUNITY • GROWTH • LEADERSHIP</div>
+                  <h2 class="hero-pro-slide-title">Building the Future of the Profession</h2>
+                  <p class="hero-pro-slide-desc">Mentorship, welfare, CPD and networking empowering newly qualified to
+                    Fellows, from students to leaders.</p>
+                  <div class="hero-pro-slide-actions">
+                    <a href="#membership" class="btn btn-primary hero-pro-slide-btn">Become a Member →</a>
+                    <a href="#pillars" class="hero-pro-slide-link">Our Pillars</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating cards - hover only, staggered very slow -->
+            <div class="hero-pro-card hero-pro-card--heritage" data-parallax="0.6">
+              <div class="hero-pro-card-kicker">ESTABLISHED</div>
+              <div class="hero-pro-card-value">1988</div>
+              <div class="hero-pro-card-meta">Serving professionals for decades</div>
+            </div>
+            <div class="hero-pro-card hero-pro-card--members" data-parallax="0.9">
+              <div class="hero-pro-card-kicker">MEMBERSHIP</div>
+              <div class="hero-pro-card-value">550+</div>
+              <div class="hero-pro-card-meta">UK MEMBERS<br>Chartered professionals</div>
+            </div>
+            <div class="hero-pro-card hero-pro-card--event" data-parallax="0.7">
+              <div class="hero-pro-card-kicker">UPCOMING CONFERENCE</div>
+              <div class="hero-pro-card-value">24 OCT</div>
+              <div class="hero-pro-card-meta"><strong>London</strong><br>View programme →</div>
+              <a href="#conference" class="hero-pro-card-link"></a>
+            </div>
+            <div class="hero-pro-card hero-pro-card--cpd" data-parallax="0.5">
+              <div class="hero-pro-card-kicker">PROFESSIONAL DEVELOPMENT</div>
+              <div class="hero-pro-card-tags"><span>CPD</span><span>NETWORKING</span><span>LEADERSHIP</span></div>
+            </div>
+            <div class="hero-pro-card hero-pro-card--geo" data-parallax="0.4">
+              <div class="hero-pro-card-kicker">GLOBAL NETWORK</div>
+              <div class="hero-pro-card-geo"><span>UK</span><span
+                  class="hero-pro-geo-arrow">↔</span><span>NIGERIA</span></div>
+            </div>
+
+            <!-- Dots only -->
+            <div class="hero-pro-dots" id="hero-pro-dots" aria-label="Slide navigation">
+              <button class="hero-pro-dot-btn is-active" data-dot="0" aria-label="Heritage"><span></span></button>
+              <button class="hero-pro-dot-btn" data-dot="1" aria-label="Conference"><span></span></button>
+              <button class="hero-pro-dot-btn" data-dot="2" aria-label="Community"><span></span></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-pro-editorial">
+          <div class="hero-pro-eyebrow"><span class="hero-pro-dot"></span><span>ICAN UK DISTRICT SOCIETY • EST. 1988 •
+              550+ MEMBERS</span></div>
+          <h1 class="hero-pro-title">
+            <span class="hero-pro-title-line">EMPOWERING THE NEXT</span>
+            <span class="hero-pro-title-line hero-pro-title-line--accent">GENERATION OF</span>
+            <span class="hero-pro-title-line">FINANCIAL LEADERS</span>
+          </h1>
+          <p class="hero-pro-desc">Connecting professionals, strengthening community and advancing professional
+            excellence across the United Kingdom and Nigeria.</p>
+          <div class="hero-pro-actions">
+            <a href="#membership" class="btn btn-primary hero-pro-btn-primary">Become a Member →</a>
+            <a href="#about" class="btn btn-secondary hero-pro-btn-secondary">Explore the Society</a>
+            <a href="#member-hub" class="hero-pro-tertiary">Member Portal →</a>
+          </div>
+          <div class="hero-pro-utility">
+            <a href="#" class="hero-pro-utility-link"><span>●</span> Membership</a>
+            <a href="#" class="hero-pro-utility-link"><span>●</span> Qualifications</a>
+            <a href="#countdown" class="hero-pro-utility-link"><span>●</span> Events</a>
+            <a href="#" class="hero-pro-utility-link"><span>●</span> CPD</a>
+            <a href="#member-hub" class="hero-pro-utility-link"><span>●</span> Member Portal</a>
+          </div>
+        </div>
+
+        <div class="hero-pro-proof">
+          <div class="hero-pro-proof-item"><strong>550+ Members</strong><span>Chartered professionals</span></div>
+          <div class="hero-pro-proof-sep"></div>
+          <div class="hero-pro-proof-item"><strong>Est. 1988</strong><span>Foremost international district</span></div>
+          <div class="hero-pro-proof-sep"></div>
+          <div class="hero-pro-proof-item"><strong>UK District Society</strong><span>ICAN Nigeria</span></div>
+          <div class="hero-pro-proof-sep"></div>
+          <div class="hero-pro-proof-item hero-pro-proof-item--act"><span>Chartered Act 1965</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION
+  EDIT: Headline in.display, paragraphs in.about-copy p
+  EDIT BADGES: Change text in.badge and.metric-card
+-->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">30+ Years of Professional Excellence</p>
+          <div class="about-grid">
+            <div class="about-copy">
+              <h2 class="display">An institution shaped by people, standards and service.</h2>
+              <p>The Institute of Chartered Accountants of Nigeria UK & District Society is a distinguished
+                professional community. We represent, support and elevate Nigerian chartered accountants living and
+                working in the United Kingdom.</p>
+              <p>Our work spans professional development, ethical standards, welfare, representation and cultural
+                connection.</p>
+              <div class="institutional-badges"><span class="badge">Chartered Accountants Act 1965</span><span
+                  class="badge">London District</span></div>
+            </div>
+            <div class="metric-badges">
+              <div class="metric-card reveal"><strong>1988</strong><span>Founded in London</span></div>
+              <div class="metric-card reveal"><strong>550+</strong><span>Chartered Members</span></div>
+              <div class="metric-card reveal"><strong>UK × NG</strong><span>Bridge Network</span></div>
+              <div class="metric-card reveal"><strong>100%</strong><span>Not-for-Profit</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TIMELINE SECTION =================
+  EDIT: Change years in <time>, titles in h3, descriptions in p
+  ADD NODE: Copy one.timeline-node block and paste
+-->
+    <section id="timeline" class="section timeline-section">
+      <div class="container">
+        <div class="section-head reveal"
+          style="display:flex;justify-content:space-between;align-items:end;gap:1rem;flex-wrap:wrap">
+          <h2 class="display">A Timeline of Purpose</h2>
+          <div class="timeline-controls"><button id="timeline-prev" class="timeline-arrow">←</button><button
+              id="timeline-next" class="timeline-arrow">→</button></div>
+        </div>
+        <div class="timeline-viewport">
+          <div id="timeline-track" class="timeline-track" role="list" tabindex="0">
+            <article class="timeline-node is-active" role="listitem" aria-current="true"><time>1988</time>
+              <h3>Foundation</h3>
+              <p>Foundation in London establishing the premier district body.</p>
+            </article>
+            <article class="timeline-node" role="listitem"><time>1990</time>
+              <h3>First Chapter Meeting</h3>
+              <p>Bringing early pioneering members together.</p>
+            </article>
+            <article class="timeline-node" role="listitem"><time>1991</time>
+              <h3>UK Recognition</h3>
+              <p>Expanding bilateral professional collaboration.</p>
+            </article>
+            <article class="timeline-node" role="listitem"><time>2005</time>
+              <h3>Nationwide Expansion</h3>
+              <p>Extending coverage across regional UK centers.</p>
+            </article>
+            <article class="timeline-node" role="listitem"><time>2018</time>
+              <h3>Digital Era</h3>
+              <p>Modernizing CPD delivery and online member portals.</p>
+            </article>
+            <article class="timeline-node" role="listitem"><time>Today</time>
+              <h3>550+ Strong</h3>
+              <p>A thriving global network of financial leaders.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXECUTIVE COMMITTEE =================
+  EDIT: Replace img src with real photos
+  Photos path: assets/images/executives/[role].jpg
+  Keep.exec-role for position title
+  Keep.exec-edit-hint to remind file name
+-->
+    <section id="executive" class="section executive">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Leadership • Governance</p>
+          <h2 class="display">Executive Committee</h2>
+          <p class="subhead">Big editable photos replace src with real images in assets/images/executives/</p>
+        </div>
+        <div class="exec-grid">
+          <article class="exec-card reveal">
+            <figure class="exec-photo"><img src="images/executive/chairman.jpeg" alt="Chairman placeholder"
+                loading="lazy"><span class="exec-fallback">C</span></figure>
+            <div class="exec-body">
+              <h3>Akintayo Ojo FCA</h3><span class="exec-role">Chairman</span>
+              <p>“Stewardship of standards and community.”</p>
+            </div>
+          </article>
+          <article class="exec-card reveal">
+            <figure class="exec-photo"><img src="images/executive/vice-chairman.jpeg" alt="Vice Chairman"
+                loading="lazy"><span class="exec-fallback">V</span></figure>
+            <div class="exec-body">
+              <h3>Tayo Animashaun, FCA</h3><span class="exec-role">Vice Chairman</span>
+              <p>“Continuity and strategic growth.”</p>
+            </div>
+          </article>
+          <article class="exec-card reveal">
+            <figure class="exec-photo"><img src="images/executive/deputy-vice-chairman.jpeg" alt=" DeputyVice Chairman"
+                loading="lazy"><span class="exec-fallback">V</span></figure>
+            <div class="exec-body">
+              <h3>Moses Peters, FCA</h3><span class="exec-role">Deputy Vice Chairman</span>
+              <p>“Continuity and strategic growth.”</p>
+            </div>
+          </article>
+          <article class="exec-card reveal">
+            <figure class="exec-photo"><img src="images/executive/general-secretary.jpeg" alt="General Secretary"
+                loading="lazy"><span class="exec-fallback">G</span></figure>
+            <div class="exec-body">
+              <h3>Olajumoke Sangojinmi, FCA</h3><span class="exec-role">General Secretary</span>
+              <p>“Governance with clarity.”</p>
+            </div>
+          </article>
+          <article class="exec-card reveal">
+            <figure class="exec-photo"><img src="images/executive/assistant-general-secretary.jpeg"
+                alt=">Asst. General Secretary" loading="lazy"><span class="exec-fallback">G</span></figure>
+            <div class="exec-body">
+              <h3>Obi Ifezue, ACA</h3><span class="exec-role">Asst. General Secretary</span>
+              <p>“Governance with clarity.”</p>
+            </div>
+          </article>
+          <article class="exec-card reveal">
+            <figure class="exec-photo"><img src="images/executive/financial-secretary.jpeg" alt="Financial Secretary"
+                loading="lazy"><span class="exec-fallback">F</span></figure>
+            <div class="exec-body">
+              <h3>Vivian Okolie, FCA</h3><span class="exec-role">Financial Secretary</span>
+              <p>“Financial stewardship and trust.”</p>
+            </div>
+          </article>
+          <article class="exec-card reveal">
+            <figure class="exec-photo"><img src="images/executive/treasurer.jpeg" alt="Treasurer" loading="lazy"><span
+                class="exec-fallback">T</span></figure>
+            <div class="exec-body">
+              <h3>Iredele Oyedele, FCA</h3><span class="exec-role">Treasurer</span>
+              <p>“Accountability in every figure.”</p>
+            </div>
+          </article>
+          <article class="exec-card reveal">
+            <figure class="exec-photo"><img src="images/executive/technical-secretary.jpeg" alt="Technical"
+                loading="lazy"><span class="exec-fallback">T</span></figure>
+            <div class="exec-body">
+              <h3>Samuel Olayioye, FCA</h3><span class="exec-role">Technical Secretary</span>
+              <p>“Rigour in technical delivery.”</p>
+            </div>
+          </article>
+          <article class="exec-card reveal">
+            <figure class="exec-photo"><img src="images/executive/social-secretary.jpeg" alt="Social"
+                loading="lazy"><span class="exec-fallback">S</span></figure>
+            <div class="exec-body">
+              <h3>Deborah O. Suleiman, ACA</h3><span class="exec-role">Social / Publicity Secretary</span>
+              <p>“Community, culture and connection.”</p>
+            </div>
+          </article>
+          <article class="exec-card reveal">
+            <figure class="exec-photo"><img src="images/executive/membership-secretary.jpeg" alt="Membership Secretary"
+                loading="lazy"><span class="exec-fallback">W</span></figure>
+            <div class="exec-body">
+              <h3>Ifeoma Okafor, FCA</h3><span class="exec-role">Membership Secretary</span>
+              <p>“Compassionate member support.”</p>
+            </div>
+          </article>
+          <article class="exec-card reveal">
+            <figure class="exec-photo"><img src="images/executive/ex-officio-1.jpeg" alt="Ex-Officio 1"
+                loading="lazy"><span class="exec-fallback">E</span></figure>
+            <div class="exec-body">
+              <h3>Seyi Bamisaye, FCA</h3><span class="exec-role">Ex-Officio 1</span>
+              <p>“Institutional memory and guidance.”</p>
+            </div>
+          </article>
+          <article class="exec-card reveal">
+            <figure class="exec-photo"><img src="images/executive/ex-officio-2.jpeg" alt="
+              Ex-Officio 2" loading="lazy"><span class="exec-fallback">L</span></figure>
+            <div class="exec-body">
+              <h3>Olawunmi Hassan, FCA</h3><span class="exec-role">Ex-Officio 2</span>
+              <p>“Integrity and compliance.”</p>
+            </div>
+          </article>
+          <article class="exec-card reveal">
+            <figure class="exec-photo"><img src="images/executive/ex-officio-3.jpeg" alt="Ex-Officio 3/IPC"
+                loading="lazy"><span class="exec-fallback">P</span></figure>
+            <div class="exec-body">
+              <h3>Marian Adekoya, FCA</h3><span class="exec-role">Ex-Officio 3/IPC</span>
+              <p>“Heritage guiding the future.”</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PILLARS / AIMS & OBJECTIVES =================
+  EDIT: Change h3 and p in each.pillar-card
+-->
+    <section id="pillars" class="section pillars">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="display">From People to Purpose Four Pillars That Hold Us.</h2>
+        </div>
+        <div class="pillars-grid">
+          <article class="pillar-card reveal"><span class="pillar-num">01</span>
+            <h3>Standards</h3>
+            <p>Upholding absolute technical rigor, integrity, and ethical compliance.</p><span
+              class="pillar-accent"></span>
+          </article>
+          <article class="pillar-card reveal"><span class="pillar-num">02</span>
+            <h3>Welfare</h3>
+            <p>Dedicated support networks, benevolent assistance, and compassionate guidance.</p><span
+              class="pillar-accent"></span>
+          </article>
+          <article class="pillar-card reveal"><span class="pillar-num">03</span>
+            <h3>Representation</h3>
+            <p>Advocating for foreign-trained and UK-based chartered professionals.</p><span
+              class="pillar-accent"></span>
+          </article>
+          <article class="pillar-card reveal"><span class="pillar-num">04</span>
+            <h3>Professional Development</h3>
+            <p>Delivering high-impact CPD workshops and executive leadership pipelines.</p><span
+              class="pillar-accent"></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ANNUAL CONFERENCE =================
+  EDIT: Change conference titles and themes
+-->
+    <section id="conference" class="section conference">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">International Gathering</p>
+          <h2 class="display">Our Annual International Accountants' Conference</h2>
+          <p class="subhead">Keynotes, CPD sessions and gala dinner.</p>
+        </div>
+        <div class="conference-grid">
+          <article class="conf-card reveal"><span class="conf-tag">6th Zonal</span>
+            <h3>6th ICAN UK Zonal Conference</h3>
+            <p class="conf-theme"><strong>Theme:</strong> Effective Institutions & Technology</p>
+            <div class="conf-actions"><a href="#" class="btn btn-ghost">View Summary</a></div>
+          </article>
+          <article class="conf-card reveal featured"><span class="conf-tag">7th International</span>
+            <h3>7th ICAN UK Intl Conference</h3>
+            <p class="conf-theme"><strong>Theme:</strong> Free Trade Area Digital Economy</p>
+            <div class="conf-actions"><a href="#" class="btn btn-primary">Next Edition</a></div>
+          </article>
+          <article class="conf-card reveal"><span class="conf-tag">2022 Archive</span>
+            <h3>ICAN UK International Conference 2022</h3>
+            <p class="conf-theme">Annual meeting with CPD, networking and awards.</p>
+            <div class="conf-actions"><a href="#" class="btn btn-ghost">Archive</a></div>
+          </article>
+        </div>
+        <div class="conf-footer-actions reveal"><a href="#" class="btn btn-primary">View Next Conference</a><a href="#"
+            class="btn btn-secondary">Sponsor / Exhibitor Info</a></div>
+      </div>
+    </section>
+
+    <!-- ================= COUNTDOWN / UPCOMING EVENT =================
+  EDIT DATE: Change CONFERENCE_DATE in js/script.js
+  EDIT TEXT: Change headline and description in.countdown-copy
+  EDIT BUTTONS: Change href in.countdown-actions
+-->
+    <section id="countdown" class="section countdown-section">
+      <div class="container">
+        <div class="countdown-panel reveal">
+          <div class="countdown-copy">
+            <p class="eyebrow">Next Gathering London</p>
+            <h2 class="display">Annual Conference & Dinner: Heritage, Innovation, Impact.</h2>
+            <p>An evening of CPD, keynote, recognition awards and community. Guest speakers from Big Four, HMRC policy
+              and ICAN Nigeria leadership.</p>
+            <div class="countdown-actions"><a href="#" class="btn btn-primary">Register for Conference 2026</a><a
+                href="#" class="btn btn-secondary">View Programme</a></div>
+            <p class="config-note">Date configurable via <code>CONFERENCE_DATE</code> in js/script.js</p>
+          </div>
+          <div class="countdown-timer" id="countdown-timer" aria-live="polite" aria-atomic="true">
+            <div class="cd-block"><span class="cd-num" id="cd-days">--</span><span class="cd-label">Days</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-block"><span class="cd-num" id="cd-hours">--</span><span class="cd-label">Hours</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-block"><span class="cd-num" id="cd-mins">--</span><span class="cd-label">Minutes</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-block"><span class="cd-num" id="cd-secs">--</span><span class="cd-label">Seconds</span></div>
+            <div id="countdown-fallback" class="cd-fallback" hidden>
+              <p>Conference date to be announced.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MEMBER RESOURCE HUB =================
+  EDIT: Change portal link in.hub-btn href
+-->
+    <section id="member-hub" class="section hub">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Belonging Access Your Professional Home.</p>
+          <p class="subhead">CPD certificates, directory, benevolence forms, magazine archive and mentorship matching
+            one portal.</p>
+        </div>
+        <div class="hub-card reveal">
+          <div class="hub-card-inner">
+            <div class="hub-head"><span class="hub-icon">◍</span>
+              <h3>ICAN Member Hub</h3><span class="hub-secure">SSO • FCA Verified • Encrypted</span>
+            </div>
+            <p>Secure access for verified members. CPD tracking, events, welfare, community.</p><a href="#"
+              class="btn btn-primary hub-btn">Enter Portal</a>
+          </div>
+          <div class="hub-depth" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA / MEMBERSHIP =================
+  EDIT: Change headline, text, buttons
+  EDIT IMAGES: Replace src in.cta-img img with real photos
+    assets/images/cta-community.jpg and cta-conference.jpg
+-->
+    <section id="membership" class="section cta">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div class="cta-depth" aria-hidden="true">
+            <div class="cta-light"></div>
+            <div class="cta-gridline"></div>
+            <div class="cta-brass-orb"></div>
+          </div>
+          <div class="cta-main">
+            <div class="cta-content">
+              <p class="eyebrow" style="color:var(--color-brass)">Membership • Identity • Future</p>
+              <h2 class="display" style="color:var(--color-ivory)">Identity, Community, Future Join Us.</h2>
+              <p>Whether you are newly qualified in London or a Fellow with decades of impact, there is a home for you
+                here.</p>
+              <div class="cta-bullets"><span>Chartered Act 1965</span><span>London District</span><span>550+
+                  Members</span></div>
+              <div class="cta-actions"><a href="#" class="btn btn-cta-primary">Apply for Membership →</a><a href="#"
+                  class="btn btn-cta-secondary">Talk to Welfare Officer</a></div>
+            </div>
+            <div class="cta-visual" aria-hidden="true">
+              <figure class="cta-img cta-img--main"><img src="images/ICANUKPICNIC241.jpg" alt="Members of ICAN UK community at annual picnic gathering in London" loading="lazy">
+              </figure>
+              <figure class="cta-img cta-img--small"><img src="images/Gallery1.jpeg" alt="Members celebrating at ICAN UK annual gala dinner" loading="lazy"><span
+                  class="cta-badge">Annual Gala • London</span></figure>
+              <div class="cta-float-card"><strong>12+</strong><span>CPD Programmes Annually</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER =================
+  EDIT: Change address, email, phone placeholders with real info
+  EDIT LINKS: Update href for governance and resources
+-->
+  <footer id="footer" class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo footer-logo">
+          <img src="images/logo-2.png" alt="ICAN UK and District Society logo - Institute of Chartered Accountants of Nigeria">
+        </div>
+        <p class="footer-summary">A distinguished professional community representing, supporting and elevating Nigerian
+          chartered accountants across the UK.</p>
+        <p class="footer-address">Registered office address – Coker Isah & Coker; 74 Church Road, Crystal Palace,
+          London. SE19 2EZ</p>
+      </div>
+      <div class="footer-col">
+        <h4>Governance</h4>
+        <ul>
+          <li><a href="pages/committee.html">Our Committee</a></li>
+          <li><a href="pages/bye-law.html">Bye Laws</a></li>
+          <li><a href="pages/executive.html">Executive Team</a></li>
+          <!-- <li><a href="#">Committee Lead</a></li> -->
+          <li><a href="pages/past-chairs.html">Past Chair</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources & Events</h4>
+        <ul>
+          <li><a href="./pages/latest-news.html">Latest News</a></li>
+          <li><a href="#">Technical Resources</a></li>
+          <li><a href="#">Newsletters</a></li>
+          <li><a href="#">Monthly Meetings</a></li>
+          <li><a href="#countdown">Upcoming Events</a></li>
+          <li><a href="#">Meeting Packs</a></li>
+          <li><a href="#conference">Past Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><span>Email: generalsecretary@ican-uk.org</span></li>
+          <li><span>Phone: +44 7535 230 605, +44 7894 069 959</span></li>
+          <!-- <li><span>Social: [configurable]</span></li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container bottom-inner">
+        <p>Copyright © ICAN UK & District Society. All Rights Reserved.</p>
+        <p class="compliance">Chartered Accountants Act 1965 compliance notice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON - No edit needed, JS controls visibility -->
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top"><span aria-hidden="true">↑</span><span class="visually-hidden">Back to top</span></button>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

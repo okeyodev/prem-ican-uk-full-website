@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17242D">
+  <title>Events Calendar | ICAN UK & District Society</title>
+  <meta name="description"
+    content="ICAN UK Events Calendar - Monthly Meetings, CPD Sessions, Annual Conference, Networking, Gala and Past Events. Est. 1988.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/events-calendar.css">
+</head>
+
+<body data-page="events">
+
+  <div id="scroll-progress" class="scroll-progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+  <!-- ================= HEADER ================= -->
+  <header id="site-header" class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo.jpg" alt="ICAN UK and District Society logo - Institute of Chartered Accountants of Nigeria">
+      </a>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="nav-item has-mega" data-mega>
+            <button type="button" class="nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="mega-governance"
+              id="trigger-governance">Governance</button>
+            <div id="mega-governance" class="mega-menu">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4>Governance</h4>
+                  <p class="mega-desc">Oversight, standards and continuity.</p>
+                </div>
+                <ul class="mega-links">
+                  <li><a href="committee.html">Our Committee</a></li>
+                  <li><a href="bye-law.html">Bye Laws</a></li>
+                  <li><a href="executive.html">Executive Team</a></li>
+                  <li><a href="past-chairs.html">Past Chair</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-mega is-active" data-mega>
+            <button type="button" class="nav-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="mega-news" id="trigger-news">
+              News & Events
+            </button>
+            <div id="mega-news" class="mega-menu">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4>Knowledge & Gathering</h4>
+                  <p class="mega-desc">CPD, technical resources and community.</p>
+                </div>
+                <ul class="mega-links">
+                  <li><a href="events-calendar.html" class="is-active-link" aria-current="page">Events Calendar</a></li>
+                  <li><a href="events-calendar.html#monthly-meetings">Monthly Meetings</a></li>
+                  <li><a href="events-calendar.html#upcoming-events">Upcoming Events</a></li>
+                  <li><a href="events-calendar.html#calendar-view">Calendar View</a></li>
+                  <li><a href="events-calendar.html#past-events">Past Events</a></li>
+                  <li><a href="events-calendar.html#resources">Meeting Packs</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="benevolent.html" class="nav-link">Benevolent</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Register</a></li>
+          <li class="nav-item"><a href="../index.html#about" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#footer" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="../index.html#member-hub" class="btn btn-primary header-join">Member Login</a>
+        <button type="button" id="mobile-toggle" class="mobile-toggle" aria-expanded="false" aria-controls="mobile-drawer"
+          aria-label="Open navigation">
+          <span class="hamburger"><i></i><i></i><i></i></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="nav-overlay" class="nav-overlay" hidden style="display:none"></div>
+    <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true"
+      aria-label="Mobile navigation">
+      <div class="drawer-header">
+        <a href="../index.html" class="logo">
+          <img src="../images/logo.jpg" alt="ICAN UK and District Society logo - Institute of Chartered Accountants of Nigeria">
+        </a>
+        <button type="button" id="mobile-close" class="mobile-close" aria-label="Close navigation menu">×</button>
+      </div>
+      <div class="drawer-body">
+        <div class="drawer-group">
+          <button type="button" class="drawer-accordion" aria-expanded="false" aria-controls="drawer-gov">Governance</button>
+          <div id="drawer-gov" class="drawer-panel" hidden>
+            <a href="committee.html">Our Committee</a>
+            <a href="bye-law.html">Bye Laws</a>
+            <a href="executive.html">Executive Team</a>
+            <a href="past-chairs.html">Past Chair</a>
+          </div>
+        </div>
+        <div class="drawer-group">
+          <button type="button" class="drawer-accordion" aria-expanded="false" aria-controls="drawer-news">News & Events</button>
+          <div id="drawer-news" class="drawer-panel" hidden>
+            <a href="events-calendar.html" class="is-active-link" aria-current="page">Events Calendar</a>
+            <a href="events-calendar.html#monthly-meetings">Monthly Meetings</a>
+            <a href="events-calendar.html#upcoming-events">Upcoming Events</a>
+            <a href="events-calendar.html#calendar-view">Calendar View</a>
+            <a href="events-calendar.html#past-events">Past Events</a>
+            <a href="events-calendar.html#resources">Meeting Packs</a>
+          </div>
+        </div> 
+        <a href="gallery.html" class="drawer-link">Gallery</a>
+        <a href="benevolent.html" class="drawer-link">Benevolent</a>
+        <a href="#" class="drawer-link">Register</a>
+        <a href="../index.html#about" class="drawer-link">About Us</a>
+        <a href="#footer" class="drawer-link">Contact Us</a>
+        <a href="../index.html#member-hub" class="drawer-link drawer-login">Member Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- Floating Section Index - Desktop Only -->
+    <nav class="section-index" aria-label="Events sections">
+      <span class="section-index-label">EVENTS</span>
+      <div class="section-index-links">
+        <a href="#monthly-meetings" class="si-link is-active" data-section="monthly-meetings"><span>01</span>
+          MONTHLY</a>
+        <a href="#upcoming-events" class="si-link" data-section="upcoming-events"><span>02</span> UPCOMING</a>
+        <a href="#calendar-view" class="si-link" data-section="calendar-view"><span>03</span> CALENDAR</a>
+        <a href="#featured-event" class="si-link" data-section="featured-event"><span>04</span> FEATURED</a>
+        <a href="#past-events" class="si-link" data-section="past-events"><span>05</span> PAST</a>
+        <a href="#resources" class="si-link" data-section="resources"><span>06</span> RESOURCES</a>
+      </div>
+      <div class="section-index-progress">
+        <div class="si-progress-bar" id="si-progress"></div>
+      </div>
+    </nav>
+
+
+
+    <!-- ================= HERO ================= -->
+    <section class="hero-pro hero-pro--events">
+      <div class="hero-pro-stage">
+        <div class="container">
+          <div class="e-hero-layout">
+            <div class="e-hero-editorial e-reveal">
+              <nav class="b-breadcrumb reveal" aria-label="Breadcrumb">
+                <a href="../index.html">Home</a><span class="sep">/</span>
+                <a href="latest-news.html">News & Events</a><span class="sep">/</span><span class="current">Events Calender</span>
+              </nav>
+              <p class="eyebrow">Events • Learning • Community</p>
+              <h1 class="hero-pro-title">
+                <span class="hero-pro-title-line">Where Members Meet,</span>
+                <span class="hero-pro-title-line hero-pro-title-line--accent">Learn and Grow.</span>
+              </h1>
+              <p class="hero-pro-desc">
+                From technical CPD sessions and monthly meetings to annual conferences and community events, discover
+                the moments that strengthen the ICAN UK professional network.
+              </p>
+              <div class="hero-pro-actions">
+                <a href="#upcoming-events" class="btn hero-pro-btn-primary">View Upcoming Events →</a>
+                <a href="#" class="btn hero-pro-btn-secondary" id="download-calendar-btn">Download Annual Calendar</a>
+              </div>
+              <div class="e-hero-quickstats">
+                <div class="e-qs-item"><strong>12+</strong><span>Events Annually</span></div>
+                <div class="e-qs-sep"></div>
+                <div class="e-qs-item"><strong>550+</strong><span>Professionals</span></div>
+                <div class="e-qs-sep"></div>
+                <div class="e-qs-item"><strong>38+</strong><span>Years of Community</span></div>
+              </div>
+            </div>
+
+            <div class="e-hero-visual e-reveal">
+              <div class="e-hero-photo-wrap">
+                <figure class="e-hero-main">
+                  <img src="../images/magazine/Conference_IMG-20251127-WA0003.jpg" alt="ICAN UK Annual Gathering" loading="eager">
+                </figure>
+                <div class="e-float-card e-float-card--1"><strong>12+</strong><span>Events Annually</span></div>
+                <div class="e-float-card e-float-card--2"><strong>550+</strong><span>Professionals</span><small>Across
+                    the UK</small></div>
+                <div class="e-float-card e-float-card--3">
+                  <span class="e-dot"></span>
+                  <div><strong>Next: Monthly Meeting</strong><small>18 Sept • London / Hybrid</small></div>
+                </div>
+              </div>
+              <div class="e-hero-small-images" aria-hidden="true">
+                <figure><img src="../images/Gallery1.jpeg" alt="Members celebrating at ICAN UK annual gala dinner" loading="lazy"><span>Annual Gala • London</span>
+                </figure>
+                <figure><img src="../images/ICANUKPICNIC241.jpg" alt="Members of ICAN UK community at annual picnic gathering in London" loading="lazy"><span>CPD Session</span></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATS STRIP ================= -->
+    <section class="section e-stats">
+      <div class="container">
+        <div class="e-stats-grid e-reveal">
+          <div class="e-stat-card">
+            <strong>12 / Year</strong>
+            <span>Monthly Meetings</span>
+            <span>Technical & Professional</span>
+          </div>
+          <div class="e-stat-card">
+            <strong>8+</strong>
+            <span>CPD Sessions</span>
+            <span>ICAEW Accredited</span>
+          </div>
+          <div class="e-stat-card">
+            <strong>1 Major</strong>
+            <span>Conferences</span>
+            <span>Flagship Annual Event</span>
+          </div>
+          <div class="e-stat-card">
+            <strong>4+</strong>
+            <span>Social Events</span>
+            <span>Community & Family</span>
+          </div>
+          <div class="e-stat-card">
+            <strong>550+</strong>
+            <span>Members Engaged</span>
+            <span>Across the UK</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SUBNAV ================= -->
+    <nav class="e-subnav" id="event-subnav" aria-label="Events sections">
+      <div class="container e-subnav-inner">
+        <a href="#monthly-meetings" class="e-subnav-link is-active">Monthly Meetings</a>
+        <a href="#upcoming-events" class="e-subnav-link">Upcoming Events</a>
+        <a href="#calendar-view" class="e-subnav-link">Calendar View</a>
+        <a href="#past-events" class="e-subnav-link">Past Events</a>
+        <a href="#resources" class="e-subnav-link">Resources</a>
+      </div>
+    </nav>
+
+    <!-- ================= MONTHLY MEETINGS ================= -->
+    <section id="monthly-meetings" class="section e-monthly">
+      <div class="container">
+        <div class="e-section-head e-reveal">
+          <div>
+            <p class="eyebrow">Recurring • Professional Development</p>
+            <h2>Monthly Meetings</h2>
+            <p class="subhead">Our monthly rhythm of technical excellence. Every third Friday, we gather for
+              CPD-accredited sessions, regulatory updates and community connection.</p>
+          </div>
+          <div>
+            <p class="subhead" style="margin-top:0;">Hybrid format ensures regional members across the UK can
+              participate. CPD certificates issued via Member Hub.</p>
+          </div>
+        </div>
+
+        <div class="mm-grid e-reveal">
+          <div class="mm-card" tabindex="0">
+            <div class="mm-top">
+              <span class="mm-type">Monthly Meeting • Technical</span>
+              <div class="mm-badges"><span class="badge-hybrid">Hybrid</span><span class="badge-cpd">CPD
+                  2hrs</span><span class="badge-members">Members Only</span></div>
+            </div>
+            <h3>September Monthly Meeting</h3>
+            <div class="mm-meta"><span>18 September 2026</span><span>6:00 PM GMT</span><span>London / Hybrid</span>
+            </div>
+            <p>Technical session on IFRS updates and professional development. Guest speaker on FRC guidance and audit
+              quality.</p>
+            <div class="mm-actions">
+              <a href="#" class="btn btn-primary"
+                onclick="window.showToast('Registration opening soon'); return false;">Register</a>
+              <a href="#" class="btn btn-secondary"
+                onclick="window.showToast('Meeting pack available 1 week before'); return false;">Download Pack</a>
+            </div>
+          </div>
+
+          <div class="mm-card" tabindex="0">
+            <div class="mm-top">
+              <span class="mm-type">Monthly Meeting • Regulatory</span>
+              <div class="mm-badges"><span class="badge-hybrid">Hybrid</span><span class="badge-cpd">CPD 2hrs</span>
+              </div>
+            </div>
+            <h3>October Monthly Meeting</h3>
+            <div class="mm-meta"><span>16 October 2026</span><span>6:00 PM GMT</span><span>London / Hybrid</span></div>
+            <p>Audit quality, risk management and regulatory update with ICAEW guest speaker. Panel on professional
+              scepticism.</p>
+            <div class="mm-actions">
+              <a href="#" class="btn btn-primary"
+                onclick="window.showToast('Registration opening soon'); return false;">Register</a>
+              <a href="#" class="btn btn-secondary"
+                onclick="window.showToast('Meeting pack available 1 week before'); return false;">Download Pack</a>
+            </div>
+          </div>
+
+          <div class="mm-card" tabindex="0">
+            <div class="mm-top">
+              <span class="mm-type">CPD • Masterclass</span>
+              <div class="mm-badges"><span class="badge-hybrid">Online</span><span class="badge-cpd">CPD 3hrs</span>
+              </div>
+            </div>
+            <h3>IFRS Masterclass</h3>
+            <div class="mm-meta"><span>28 October 2026</span><span>5:30 PM GMT</span><span>Online / CPD Portal</span>
+            </div>
+            <p>Intensive CPD on IFRS 9, 15 and 16 practical application for UK practitioners. Case studies and Q&A.</p>
+            <div class="mm-actions">
+              <a href="#" class="btn btn-primary"
+                onclick="window.showToast('CPD registration via Member Hub'); return false;">Reserve Spot</a>
+              <a href="#" class="btn btn-secondary"
+                onclick="window.showToast('Resources will be available post-event'); return false;">View Outline</a>
+            </div>
+          </div>
+
+          <div class="mm-card" tabindex="0">
+            <div class="mm-top">
+              <span class="mm-type">Community • Annual Planning</span>
+              <div class="mm-badges"><span class="badge-social">Community</span><span class="badge-hybrid">Hybrid</span>
+              </div>
+            </div>
+            <h3>Annual Programme Review</h3>
+            <div class="mm-meta"><span>January 2027</span><span>6:00 PM GMT</span><span>London / Hybrid</span></div>
+            <p>Review of the year's programme, member feedback, and planning for the upcoming annual conference and
+              social calendar.</p>
+            <div class="mm-actions">
+              <a href="#" class="btn btn-primary"
+                onclick="window.showToast('Agenda to be published'); return false;">View Agenda</a>
+              <a href="#" class="btn btn-secondary">Member Feedback</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= UPCOMING EVENTS ================= -->
+    <section id="upcoming-events" class="section e-upcoming">
+      <div class="container">
+        <div class="e-section-head e-reveal">
+          <div>
+            <p class="eyebrow">Featured • Next 90 Days</p>
+            <h2>Upcoming Events</h2>
+            <p class="subhead">Our most important gatherings. From flagship conference to intimate networking evenings,
+              each event is designed to strengthen expertise and community.</p>
+          </div>
+        </div>
+
+        <!-- Featured Large Card -->
+        <div id="upcoming-featured" class="e-featured-card e-reveal" data-event-id="conference-2026">
+          <div class="e-featured-img">
+            <img src="../images/magazine/Conference_IMG-20251127-WA0003.jpg" alt="ICAN UK Annual Conference 2026" loading="lazy">
+            <div class="e-featured-overlay">
+              <div class="e-overlay-stat"><strong>12+</strong><span>Speakers</span></div>
+              <div class="e-overlay-stat"><strong>300+</strong><span>Professionals</span></div>
+              <div class="e-overlay-stat"><strong>8hrs</strong><span>CPD</span></div>
+            </div>
+          </div>
+          <div class="e-featured-content">
+            <div class="e-featured-kicker">Featured • Annual Flagship</div>
+            <h3>ICAN UK Annual Conference 2026</h3>
+            <p class="e-featured-desc">Leading the Future of Finance and Professional Excellence. A full day of
+              keynotes, technical panels, leadership sessions and community celebration.</p>
+            <div class="e-featured-meta">
+              <div class="e-fm-item"><small>Date</small><span>20 November 2026</span></div>
+              <div class="e-fm-item"><small>Time</small><span>9:00 AM - 5:30 PM</span></div>
+              <div class="e-fm-item"><small>Venue</small><span>London Marriott</span></div>
+              <div class="e-fm-item"><small>Format</small><span>Conference + Gala</span></div>
+            </div>
+            <div class="e-featured-countdown" data-countdown-date="2026-11-20T09:00:00+00:00" id="featured-countdown">
+              <div class="e-cd-block"><strong data-days>--</strong><small>Days</small></div>
+              <div class="e-cd-block"><strong data-hours>--</strong><small>Hours</small></div>
+              <div class="e-cd-block"><strong data-mins>--</strong><small>Mins</small></div>
+              <div class="e-cd-block"><strong data-secs>--</strong><small>Secs</small></div>
+            </div>
+            <div class="e-featured-actions">
+              <a href="#" class="btn btn-primary" data-modal-trigger>Register Now →</a>
+              <a href="#" class="btn btn-secondary" data-modal-trigger>View Programme</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Smaller Cards -->
+        <div id="upcoming-grid" class="upcoming-grid e-reveal">
+          <div class="up-card" data-event-id="networking-nov-2026" tabindex="0">
+            <div class="up-card-img">
+              <img src="../images/Gallery1.jpeg" alt="Networking Evening" loading="lazy">
+              <span class="up-card-badge">Networking • 5 Nov</span>
+            </div>
+            <div class="up-card-body">
+              <h4>Professional Networking Evening</h4>
+              <div class="up-card-meta"><span>Central London</span><span>6:30 PM</span></div>
+              <p class="up-card-desc">Connect with fellow chartered accountants, mentors and industry leaders in a
+                relaxed setting.</p>
+              <span class="up-card-link">View details →</span>
+            </div>
+          </div>
+
+          <div class="up-card" data-event-id="cpd-ifrs-nov-2026" tabindex="0">
+            <div class="up-card-img">
+              <img src="../images/ICANUKPICNIC241.jpg" alt="CPD Session" loading="lazy">
+              <span class="up-card-badge">CPD • 28 Oct</span>
+            </div>
+            <div class="up-card-body">
+              <h4>IFRS Masterclass - CPD Session</h4>
+              <div class="up-card-meta"><span>Online</span><span>5:30 PM</span></div>
+              <p class="up-card-desc">Intensive CPD on IFRS 9, 15 and 16 practical application for UK practitioners.</p>
+              <span class="up-card-link">View details →</span>
+            </div>
+          </div>
+
+          <div class="up-card" data-event-id="gala-2026" tabindex="0">
+            <div class="up-card-img">
+              <img src="../images/Gallery1.jpeg" alt="Annual Gala" loading="lazy">
+              <span class="up-card-badge">Gala • 21 Nov</span>
+            </div>
+            <div class="up-card-body">
+              <h4>Annual Gala & Awards Night</h4>
+              <div class="up-card-meta"><span>London Marriott</span><span>7:00 PM</span></div>
+              <p class="up-card-desc">Celebrating excellence, service and community. Black tie evening with awards
+                ceremony.</p>
+              <span class="up-card-link">View details →</span>
+            </div>
+          </div>
+
+          <div class="up-card" data-event-id="young-pro-dec-2026" tabindex="0">
+            <div class="up-card-img">
+              <img src="../images/ICANUKPICNIC241.jpg" alt="Young Professionals" loading="lazy">
+              <span class="up-card-badge">Young Pro • 4 Dec</span>
+            </div>
+            <div class="up-card-body">
+              <h4>Young Professionals Forum</h4>
+              <div class="up-card-meta"><span>Canary Wharf</span><span>6:00 PM</span></div>
+              <p class="up-card-desc">Career pathways, ACA to FCA journey, and building your network in the UK.</p>
+              <span class="up-card-link">View details →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INTERACTIVE CALENDAR VIEW ================= -->
+    <section id="calendar-view" class="section e-calendar-section">
+      <div class="container">
+        <div class="e-section-head e-reveal">
+          <div>
+            <p class="eyebrow">Plan • Organise • Attend</p>
+            <h2>Interactive Calendar</h2>
+            <p class="subhead">Explore all Society activities in month, list or agenda view. Click any date to see
+              details. Download the full calendar to your personal device.</p>
+          </div>
+          <div>
+            <a href="#" class="btn btn-secondary" id="download-calendar-btn-2">Download .ICS Calendar</a>
+          </div>
+        </div>
+
+        <div id="e-cal-wrap" class="e-cal-wrap e-reveal" data-view="month">
+          <div class="e-cal-header">
+            <div class="e-cal-title">
+              <div class="e-cal-nav">
+                <button id="e-cal-prev" class="e-cal-btn" aria-label="Previous month">‹</button>
+                <button id="e-cal-next" class="e-cal-btn" aria-label="Next month">›</button>
+              </div>
+              <h3 id="e-cal-title-text">November 2026</h3>
+              <button id="e-cal-today" class="e-cal-today">Today</button>
+            </div>
+            <div class="e-cal-controls">
+              <div class="e-cal-views" role="group" aria-label="Calendar view">
+                <button class="e-cal-view-btn is-active" data-view="month">Month</button>
+                <button class="e-cal-view-btn" data-view="list">List</button>
+                <button class="e-cal-view-btn" data-view="agenda">Agenda</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="e-cal-legend">
+            <span class="e-legend-item"><span class="e-legend-dot meeting"></span> Meeting</span>
+            <span class="e-legend-item"><span class="e-legend-dot cpd"></span> CPD</span>
+            <span class="e-legend-item"><span class="e-legend-dot social"></span> Social / Networking</span>
+            <span class="e-legend-item"><span class="e-legend-dot conference"></span> Conference</span>
+            <span class="e-legend-item"><span class="e-legend-dot gala"></span> Gala</span>
+          </div>
+
+          <!-- Month Grid -->
+          <div id="e-cal-grid" class="e-cal-grid"></div>
+
+          <!-- List View -->
+          <div id="e-cal-list" class="e-cal-list" style="display:none;"></div>
+
+          <!-- Agenda View -->
+          <div id="e-cal-agenda" class="e-cal-agenda" style="display:none;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED ANNUAL EVENT ================= -->
+    <section id="featured-event" class="section e-featured-dark">
+      <div class="container">
+        <div class="e-featured-dark-inner e-reveal">
+          <div class="e-featured-dark-content">
+            <p class="eyebrow">Flagship • November 2026</p>
+            <h2>ICAN UK Annual Conference 2026</h2>
+            <p>Leading the Future of Finance and Professional Excellence. A day of insight, leadership and community —
+              designed for chartered accountants shaping the future of the profession across the UK and Nigeria.</p>
+            <div class="e-featured-dark-bullets"><span>Chartered Act 1965</span><span>London District</span><span>550+
+                Members</span><span>12+ Speakers</span></div>
+            <div class="e-featured-dark-actions">
+              <a href="#" class="btn btn-cta-primary"
+                onclick="window.showToast('Conference registration opens October'); return false;">Register for
+                Conference →</a>
+              <a href="#" class="btn btn-cta-secondary"
+                onclick="window.showToast('Programme PDF coming soon'); return false;">Download Brochure</a>
+            </div>
+            <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:.6rem;">
+              <small style="color:rgba(242,239,231,.6);font-size:.72rem;">Venue: London Marriott Grosvenor Square • CPD
+                8hrs • Gala Dinner included</small>
+            </div>
+          </div>
+          <div class="e-featured-dark-visual">
+            <figure class="e-featured-dark-img">
+              <img src="../images/magazine/Conference_IMG-20251127-WA0003.jpg" alt="Annual Conference" loading="lazy">
+              <div class="e-featured-dark-countdown" data-countdown-date="2026-11-20T09:00:00+00:00">
+                <div class="e-cd-block"><strong data-days>--</strong><small>Days</small></div>
+                <div class="e-cd-block"><strong data-hours>--</strong><small>Hours</small></div>
+                <div class="e-cd-block"><strong data-mins>--</strong><small>Mins</small></div>
+                <div class="e-cd-block"><strong data-secs>--</strong><small>Secs</small></div>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PAST EVENTS ARCHIVE ================= -->
+    <section id="past-events" class="section e-past">
+      <div class="container">
+        <div class="e-section-head e-reveal">
+          <div>
+            <p class="eyebrow">Archive • History • Credibility</p>
+            <h2>Past Events Archive</h2>
+            <p class="subhead">A society is measured by its consistency. Explore our archive of conferences, galas, CPD
+              sessions and community gatherings.</p>
+          </div>
+        </div>
+
+        <div id="past-filter" class="e-past-filter e-reveal">
+          <button class="e-past-year is-active" data-year="all">All Years</button>
+          <button class="e-past-year" data-year="2026">2026</button>
+          <button class="e-past-year" data-year="2025">2025</button>
+          <button class="e-past-year" data-year="2024">2024</button>
+          <button class="e-past-year" data-year="2023">2023</button>
+        </div>
+
+        <div id="past-grid" class="past-grid e-reveal">
+          <div class="past-card" data-year="2025" tabindex="0">
+            <div class="past-card-img"><img src="../images/ICANUKPICNIC241.jpg" alt="Conference 2025"
+                loading="lazy"><span class="past-card-year">2025</span></div>
+            <div class="past-card-body">
+              <h4>Annual Conference 2025 - Resilience & Growth</h4>
+              <div class="past-card-date">15 November 2025 • London</div>
+              <p class="past-card-summary">Over 280 professionals gathered to discuss resilience in a changing economy
+                and the future of professional services.</p>
+              <a href="#" class="past-card-link"
+                onclick="window.showToast('Photo gallery coming soon'); return false;">Photo Gallery →</a>
+            </div>
+          </div>
+
+          <div class="past-card" data-year="2025" tabindex="0">
+            <div class="past-card-img"><img src="../images/Gallery1.jpeg" alt="Gala 2025" loading="lazy"><span
+                class="past-card-year">2025</span></div>
+            <div class="past-card-body">
+              <h4>Annual Gala 2025</h4>
+              <div class="past-card-date">16 November 2025 • London</div>
+              <p class="past-card-summary">Celebrating 37 years of community and professional excellence with awards and
+                distinguished service recognition.</p>
+              <a href="#" class="past-card-link"
+                onclick="window.showToast('Photo gallery coming soon'); return false;">Photo Gallery →</a>
+            </div>
+          </div>
+
+          <div class="past-card" data-year="2024" tabindex="0">
+            <div class="past-card-img"><img src="../images/ICANUKPICNIC241.jpg" alt="CPD 2024" loading="lazy"><span
+                class="past-card-year">2024</span></div>
+            <div class="past-card-body">
+              <h4>Technical CPD Series 2024</h4>
+              <div class="past-card-date">20 September 2024 • Hybrid</div>
+              <p class="past-card-summary">Sustainability reporting and ISSB standards - preparing members for the
+                future of corporate reporting.</p>
+              <a href="#" class="past-card-link"
+                onclick="window.showToast('Resources available in Member Hub'); return false;">View Resources →</a>
+            </div>
+          </div>
+
+          <div class="past-card" data-year="2024" tabindex="0">
+            <div class="past-card-img"><img src="../images/Gallery1.jpeg" alt="Picnic 2024" loading="lazy"><span
+                class="past-card-year">2024</span></div>
+            <div class="past-card-body">
+              <h4>Summer Family Picnic 2024</h4>
+              <div class="past-card-date">20 July 2024 • Hyde Park</div>
+              <p class="past-card-summary">Family community picnic with over 150 members and families celebrating
+                community and wellbeing.</p>
+              <a href="#" class="past-card-link"
+                onclick="window.showToast('Photo gallery coming soon'); return false;">Photo Gallery →</a>
+            </div>
+          </div>
+
+          <div class="past-card" data-year="2023" tabindex="0">
+            <div class="past-card-img"><img src="../images/ICANUKPICNIC241.jpg" alt="Conference 2023"
+                loading="lazy"><span class="past-card-year">2023</span></div>
+            <div class="past-card-body">
+              <h4>Annual Conference 2023</h4>
+              <div class="past-card-date">18 November 2023 • London</div>
+              <p class="past-card-summary">Professional excellence in a digital age - exploring AI, digital
+                transformation and professional evolution.</p>
+              <a href="#" class="past-card-link"
+                onclick="window.showToast('Photo gallery coming soon'); return false;">Photo Gallery →</a>
+            </div>
+          </div>
+
+          <div class="past-card" data-year="2026" tabindex="0">
+            <div class="past-card-img"><img src="../images/Gallery1.jpeg" alt="CPD 2026" loading="lazy"><span
+                class="past-card-year">2026</span></div>
+            <div class="past-card-body">
+              <h4>Q1 Technical Series 2026</h4>
+              <div class="past-card-date">15 March 2026 • Online</div>
+              <p class="past-card-summary">Audit quality and professional scepticism series with FRC guest speakers and
+                ICAEW collaboration.</p>
+              <a href="#" class="past-card-link"
+                onclick="window.showToast('Resources available in Member Hub'); return false;">View Resources →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MEETING RESOURCES ================= -->
+    <section id="resources" class="section e-resources">
+      <div class="container">
+        <div class="e-section-head e-reveal">
+          <div>
+            <p class="eyebrow">Resources • Documentation • Archive</p>
+            <h2>Meeting Resources</h2>
+            <p class="subhead">All documentation from meetings, CPD sessions, newsletters and conference materials —
+              organised for verified members.</p>
+          </div>
+        </div>
+
+        <div class="res-grid e-reveal">
+          <div class="res-card" tabindex="0">
+            <div class="res-icon">📄</div>
+            <h4>Meeting Packs</h4>
+            <p>Agendas, minutes, technical papers and presentation decks from monthly meetings.</p>
+            <a href="#" class="btn btn-secondary"
+              onclick="window.showToast('Member Hub login required'); return false;">Access Packs</a>
+          </div>
+          <div class="res-card" tabindex="0">
+            <div class="res-icon">🎓</div>
+            <h4>CPD Documents</h4>
+            <p>Certificates, attendance records, learning materials and accredited CPD tracking.</p>
+            <a href="#" class="btn btn-secondary"
+              onclick="window.showToast('Member Hub login required'); return false;">View CPD</a>
+          </div>
+          <div class="res-card" tabindex="0">
+            <div class="res-icon">📰</div>
+            <h4>Newsletters</h4>
+            <p>Monthly newsletters, technical updates, community news and presidential messages.</p>
+            <a href="#" class="btn btn-secondary"
+              onclick="window.showToast('Newsletter archive opening soon'); return false;">Browse Archive</a>
+          </div>
+          <div class="res-card" tabindex="0">
+            <div class="res-icon">🎤</div>
+            <h4>Conference Materials</h4>
+            <p>Keynotes, panel recordings, speaker decks and post-conference reports from annual conferences.</p>
+            <a href="#" class="btn btn-secondary"
+              onclick="window.showToast('Conference materials in Member Hub'); return false;">View Materials</a>
+          </div>
+          <div class="res-card" tabindex="0">
+            <div class="res-icon">📊</div>
+            <h4>Annual Reports</h4>
+            <p>Society annual reports, financial statements, governance updates and strategic plans.</p>
+            <a href="#" class="btn btn-secondary"
+              onclick="window.showToast('Annual reports available on request'); return false;">Download Reports</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PHOTO MEMORIES ================= -->
+    <section id="memories" class="section e-memories">
+      <div class="container">
+        <div class="e-section-head e-reveal">
+          <div>
+            <p class="eyebrow">Community • Warmth • Memories</p>
+            <h2>Event Memories</h2>
+            <p class="subhead">Beyond CPD and technical sessions — we are a community. Family picnics, galas, awards and
+              lifelong connections.</p>
+          </div>
+          <div class="e-mem-controls">
+            <button id="mem-prev" class="e-mem-arrow" aria-label="Previous">‹</button>
+            <button id="mem-next" class="e-mem-arrow" aria-label="Next">›</button>
+          </div>
+        </div>
+
+        <div id="mem-ribbon" class="e-mem-ribbon e-reveal">
+          <div class="e-mem-card" tabindex="0"><img src="../images/Gallery1.jpeg" alt="Annual Gala" loading="lazy">
+            <div class="e-mem-card-body"><strong>Annual Gala 2025</strong><span>Black tie • Awards • London</span></div>
+          </div>
+          <div class="e-mem-card" tabindex="0"><img src="../images/ICANUKPICNIC241.jpg" alt="Conference" loading="lazy">
+            <div class="e-mem-card-body"><strong>Conference 2025</strong><span>280+ Professionals • Keynotes</span>
+            </div>
+          </div>
+          <div class="e-mem-card" tabindex="0"><img src="../images/Gallery1.jpeg" alt="Family Picnic" loading="lazy">
+            <div class="e-mem-card-body"><strong>Summer Picnic 2024</strong><span>Hyde Park • Families •
+                Community</span></div>
+          </div>
+          <div class="e-mem-card" tabindex="0"><img src="../images/ICANUKPICNIC241.jpg" alt="Networking" loading="lazy">
+            <div class="e-mem-card-body"><strong>Networking Evening</strong><span>City of London • 80+ Members</span>
+            </div>
+          </div>
+          <div class="e-mem-card" tabindex="0"><img src="../images/Gallery1.jpeg" alt="Awards" loading="lazy">
+            <div class="e-mem-card-body"><strong>Awards & Recognition</strong><span>Distinguished Service •
+                Fellows</span></div>
+          </div>
+          <div class="e-mem-card" tabindex="0"><img src="../images/ICANUKPICNIC241.jpg" alt="CPD" loading="lazy">
+            <div class="e-mem-card-body"><strong>CPD Technical Session</strong><span>IFRS Masterclass • CPD 3hrs</span>
+            </div>
+          </div>
+          <div class="e-mem-card" tabindex="0"><img src="../images/Gallery1.jpeg" alt="Young Professionals"
+              loading="lazy">
+            <div class="e-mem-card-body"><strong>Young Professionals</strong><span>Canary Wharf • Mentorship</span>
+            </div>
+          </div>
+          <div class="e-mem-card" tabindex="0"><img src="../images/ICANUKPICNIC241.jpg" alt="Community" loading="lazy">
+            <div class="e-mem-card-body"><strong>Community Social</strong><span>Christmas Gathering • Charity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEWSLETTER CTA ================= -->
+    <section class="section e-newsletter">
+      <div class="container">
+        <div class="e-newsletter-panel e-reveal">
+          <div class="e-newsletter-content">
+            <p class="eyebrow">Stay Connected • Events & Community</p>
+            <h2>Stay Connected with ICAN UK Events</h2>
+            <p>Receive updates on meetings, conferences, CPD opportunities and community activities. No spam, only
+              professional community updates.</p>
+          </div>
+          <form class="e-newsletter-form"
+            onsubmit="event.preventDefault(); window.showToast('Thank you for subscribing!'); this.reset();">
+            <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn btn-cta-primary">Subscribe →</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="footer" class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo footer-logo">
+          <img src="../images/logo-2.png" alt="ICAN UK and District Society logo - Institute of Chartered Accountants of Nigeria">
+        </div>
+        <p class="footer-summary">A distinguished professional community representing, supporting and elevating Nigerian
+          chartered accountants across the UK.</p>
+        <p class="footer-address">Registered office address – Coker Isah & Coker; 74 Church Road, Crystal Palace,
+          London. SE19 2EZ</p>
+      </div>
+      <div class="footer-col">
+        <h4>Governance</h4>
+        <ul>
+          <li><a href="committee.html">Our Committee</a></li>
+          <li><a href="bye-law.html">Bye Laws</a></li>
+          <li><a href="executive.html">Executive Team</a></li>
+          <li><a href="past-chairs.html">Past Chair</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources & Events</h4>
+        <ul>
+          <li><a href="events-calendar.html" class="is-active-link" aria-current="page">Events Calendar</a></li>
+          <li><a href="#">Technical Resources</a></li>
+          <li><a href="#">Newsletters</a></li>
+          <li><a href="events-calendar.html#monthly-meetings">Monthly Meetings</a></li>
+          <li><a href="events-calendar.html#upcoming-events">Upcoming Events</a></li>
+          <li><a href="events-calendar.html#resources">Meeting Packs</a></li>
+          <li><a href="events-calendar.html#past-events">Past Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><span>Email: generalsecretary@ican-uk.org</span></li>
+          <li><span>Phone: +44 7535 230 605, +44 7894 069 959</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container bottom-inner">
+        <p>Copyright © ICAN UK & District Society. All Rights Reserved.</p>
+        <p class="compliance">Chartered Accountants Act 1965 compliance notice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top"><span aria-hidden="true">↑</span><span class="visually-hidden">Back to top</span></button>
+
+  <!-- ================= EVENT MODAL ================= -->
+  <div id="event-modal" class="e-modal" hidden aria-hidden="true" role="dialog" aria-modal="true"
+    aria-label="Event details">
+    <div class="e-modal-backdrop"></div>
+    <div class="e-modal-card" role="document">
+      <div class="e-modal-img">
+        <img id="e-modal-img" src="" alt="Enlarged view of selected event image">
+        <button class="e-modal-close" aria-label="Close modal">×</button>
+      </div>
+      <div class="e-modal-body">
+        <div id="e-modal-kicker" class="e-modal-kicker">Event</div>
+        <h3 id="e-modal-title">Event Title</h3>
+        <div id="e-modal-meta" class="e-modal-meta"></div>
+        <p id="e-modal-desc" class="e-modal-desc">Event description</p>
+        <div id="e-modal-actions" class="e-modal-actions"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/events-calendar.js"></script>
+</body>
+
+</html>
